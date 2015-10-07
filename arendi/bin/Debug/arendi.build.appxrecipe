@@ -9,53 +9,59 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>19c7b9ef-d1a6-4b39-8b31-1f9374c4bcc8</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\arendi\arendi\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>A:\arendi\arendi\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\arendi\arendi\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="A:\arendi\arendi\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\arendi\arendi\bin\Debug\arendi.exe">
+    <AppxPackagedFile Include="A:\arendi\arendi\bin\Debug\arendi.exe">
       <PackagePath>arendi.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\arendi\arendi\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="A:\arendi\packages\DrawerLayout.1.0.4\lib\DrawerLayout.dll">
+      <PackagePath>DrawerLayout.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\arendi\arendi\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\arendi\arendi\Assets\main-background.png">
+    <AppxPackagedFile Include="A:\arendi\arendi\Assets\main-background.png">
       <PackagePath>Assets\main-background.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\arendi\arendi\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="A:\arendi\arendi\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\arendi\arendi\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="A:\arendi\arendi\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\arendi\arendi\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="A:\arendi\arendi\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\arendi\arendi\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="A:\arendi\arendi\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\arendi\arendi\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="A:\arendi\arendi\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\arendi\arendi\bin\Debug\arendi.xr.xml">
+    <AppxPackagedFile Include="A:\arendi\arendi\bin\Debug\arendi.xr.xml">
       <PackagePath>arendi.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\arendi\arendi\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="A:\arendi\arendi\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\arendi\arendi\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="A:\arendi\arendi\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\arendi\arendi\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="A:\arendi\arendi\bin\Debug\Portal.xbf">
+      <PackagePath>Portal.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\arendi\arendi\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

@@ -30,3 +30,43 @@ c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debu
 c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\qualifiers.txt.intermediate
 c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\ProjectArchitectures.txt
+A:\arendi\arendi\bin\Debug\App.xbf
+A:\arendi\arendi\bin\Debug\MainPage.xbf
+A:\arendi\arendi\bin\Debug\Portal.xbf
+A:\arendi\arendi\bin\Debug\arendi.xr.xml
+A:\arendi\arendi\bin\Debug\arendi.exe
+A:\arendi\arendi\bin\Debug\arendi.pdb
+A:\arendi\arendi\bin\Debug\resources.pri
+A:\arendi\arendi\bin\Debug\AppxManifest.xml
+A:\arendi\arendi\bin\Debug\arendi.build.appxrecipe
+A:\arendi\arendi\bin\Debug\DrawerLayout.dll
+A:\arendi\arendi\obj\Debug\arendi.csprojResolveAssemblyReference.cache
+A:\arendi\arendi\obj\Debug\App.g.i.cs
+A:\arendi\arendi\obj\Debug\App.g.cs
+A:\arendi\arendi\obj\Debug\MainPage.g.i.cs
+A:\arendi\arendi\obj\Debug\MainPage.g.cs
+A:\arendi\arendi\obj\Debug\Portal.g.i.cs
+A:\arendi\arendi\obj\Debug\Portal.g.cs
+A:\arendi\arendi\obj\Debug\XamlTypeInfo.g.cs
+A:\arendi\arendi\obj\Debug\App.xaml
+A:\arendi\arendi\obj\Debug\MainPage.xaml
+A:\arendi\arendi\obj\Debug\App.xbf
+A:\arendi\arendi\obj\Debug\MainPage.xbf
+A:\arendi\arendi\obj\Debug\XamlSaveStateFile.xml
+A:\arendi\arendi\obj\Debug\Portal.xaml
+A:\arendi\arendi\obj\Debug\Portal.xbf
+A:\arendi\arendi\obj\Debug\arendi.exe
+A:\arendi\arendi\obj\Debug\arendi.pdb
+A:\arendi\arendi\obj\Debug\arendi.csproj.GenerateResource.Cache
+A:\arendi\arendi\obj\Debug\priconfig.xml
+A:\arendi\arendi\obj\Debug\priconfig.xml.intermediate
+A:\arendi\arendi\obj\Debug\layout.resfiles
+A:\arendi\arendi\obj\Debug\layout.resfiles.intermediate
+A:\arendi\arendi\obj\Debug\resources.resfiles
+A:\arendi\arendi\obj\Debug\resources.resfiles.intermediate
+A:\arendi\arendi\obj\Debug\pri.resfiles
+A:\arendi\arendi\obj\Debug\pri.resfiles.intermediate
+A:\arendi\arendi\obj\Debug\qualifiers.txt
+A:\arendi\arendi\obj\Debug\qualifiers.txt.intermediate
+A:\arendi\arendi\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+A:\arendi\arendi\obj\Debug\ProjectArchitectures.txt

@@ -1,0 +1,115 @@
+﻿<Page
+    x:Class="arendi.Portal"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:arendi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:drawerLayout="using:DrawerLayout"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="RootLayout">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Bar -->
+        <Grid x:Name="TitleBar" 
+              Background="#FF7B00" 
+              Grid.Row="0" 
+              Height="70">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Image x:ConnectionId='6' Margin="5,5,5,5"  
+                   x:Name="DrawerIcon"  
+                   Grid.Column="0" 
+                   Source="/Assets/Logo.png" 
+                   HorizontalAlignment="Left" 
+                                              
+                   Grid.ColumnSpan="2" 
+                   Width="60" />
+        </Grid>
+
+        <!-- Drawer Layout -->
+        <drawerLayout:DrawerLayout Grid.Row="1" 
+                                   x:Name="DrawerLayout">
+
+            <!-- Necessary part somehow -->
+            <Grid x:Name="MainFragment" 
+                  Background="White">
+            </Grid>
+
+            <Grid x:Name="ListFragment" 
+                  Background="#F4F4F4">
+
+                <ScrollViewer>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="70"/>
+                            <RowDefinition Height="70"/>
+                            <RowDefinition Height="70"/>
+                            <RowDefinition Height="70"/>
+                            <RowDefinition Height="70"/>
+                            <RowDefinition Height="70"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid x:Name="MenuIdentity" Background="Transparent" Grid.Row="0">
+                            <StackPanel Margin="5" 
+                                        Orientation="Horizontal">
+                                <Image Source="/Assets/logo.png" 
+                                       Height="60" 
+                                       Width="60" 
+                                       Stretch="UniformToFill" />
+                                <TextBlock x:Name="FullName" Text="BART SIMPSON" Foreground="Black"  FontSize="18" TextWrapping="Wrap" Margin="10 0 0 0"  />
+                            </StackPanel>
+                        </Grid>
+
+                        <Grid x:ConnectionId='1' x:Name="Item1" Background="Transparent" Grid.Row="1"                      >
+                            <Border BorderBrush="#FFE0E0E0" BorderThickness="0 0 0 1" />
+                            <StackPanel Margin="20 10 0 5" VerticalAlignment="Bottom">
+                                <TextBlock Text="Fikirler" Foreground="Black"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  FontSize="18" />
+                            </StackPanel>
+                        </Grid>
+
+                        <Grid x:ConnectionId='2' x:Name="Item2" Background="Transparent" Grid.Row="2"                      >
+                            <Border BorderBrush="#FFE0E0E0" BorderThickness="0 0 0 1" />
+                            <StackPanel Margin="20 10 0 5" VerticalAlignment="Bottom">
+                                <TextBlock Text="Takip Ettiklerim" Foreground="Black"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  FontSize="18" />
+                            </StackPanel>
+                        </Grid>
+
+                        <Grid x:ConnectionId='3' x:Name="Item3" Background="Transparent" Grid.Row="3"                      >
+                            <Border BorderBrush="#FFE0E0E0" BorderThickness="0 0 0 1" />
+                            <StackPanel Margin="20 10 0 5" VerticalAlignment="Bottom">
+                                <TextBlock Text="Bildirimler" Foreground="Black"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  FontSize="18" />
+                            </StackPanel>
+                        </Grid>
+
+                        <Grid x:ConnectionId='4' x:Name="Item4" Background="Transparent" Grid.Row="4"                      >
+                            <Border BorderBrush="#FFE0E0E0" BorderThickness="0 0 0 1" />
+                            <StackPanel Margin="20 10 0 5" VerticalAlignment="Bottom">
+                                <TextBlock Text="Ayarlar" Foreground="Black"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  FontSize="18" />
+                            </StackPanel>
+                        </Grid>
+
+                        <Grid x:ConnectionId='5' x:Name="Item5" Background="Transparent" Grid.Row="5"                      >
+                            <Border BorderBrush="#FFE0E0E0" BorderThickness="0 0 0 1" />
+                            <StackPanel Margin="20 10 0 5" VerticalAlignment="Bottom">
+                                <TextBlock Text="Çıkış" Foreground="Black"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  FontSize="18" />
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </ScrollViewer>
+
+            </Grid>
+        </drawerLayout:DrawerLayout>
+    </Grid>
+</Page>
+

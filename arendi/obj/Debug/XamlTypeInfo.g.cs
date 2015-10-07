@@ -124,15 +124,25 @@ namespace arendi.arendi_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[3];
+            _typeNameTable = new string[8];
             _typeNameTable[0] = "arendi.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[3] = "DrawerLayout.DrawerLayout";
+            _typeNameTable[4] = "Windows.UI.Xaml.Controls.Grid";
+            _typeNameTable[5] = "Windows.UI.Xaml.Controls.Panel";
+            _typeNameTable[6] = "Boolean";
+            _typeNameTable[7] = "arendi.Portal";
 
-            _typeTable = new global::System.Type[3];
+            _typeTable = new global::System.Type[8];
             _typeTable[0] = typeof(global::arendi.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[3] = typeof(global::DrawerLayout.DrawerLayout);
+            _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.Grid);
+            _typeTable[5] = typeof(global::Windows.UI.Xaml.Controls.Panel);
+            _typeTable[6] = typeof(global::System.Boolean);
+            _typeTable[7] = typeof(global::arendi.Portal);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -168,6 +178,8 @@ namespace arendi.arendi_XamlTypeInfo
         }
 
         private object Activate_0_MainPage() { return new global::arendi.MainPage(); }
+        private object Activate_3_DrawerLayout() { return new global::DrawerLayout.DrawerLayout(); }
+        private object Activate_7_Portal() { return new global::arendi.Portal(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -193,16 +205,63 @@ namespace arendi.arendi_XamlTypeInfo
             case 2:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::arendi.arendi_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
+
+            case 3:   //  DrawerLayout.DrawerLayout
+                userType = new global::arendi.arendi_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Grid"));
+                userType.Activator = Activate_3_DrawerLayout;
+                userType.AddMemberName("IsDrawerOpen");
+                xamlType = userType;
+                break;
+
+            case 4:   //  Windows.UI.Xaml.Controls.Grid
+                xamlType = new global::arendi.arendi_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 5:   //  Windows.UI.Xaml.Controls.Panel
+                xamlType = new global::arendi.arendi_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  Boolean
+                xamlType = new global::arendi.arendi_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  arendi.Portal
+                userType = new global::arendi.arendi_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_Portal;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
             }
             return xamlType;
         }
 
 
+        private object get_0_DrawerLayout_IsDrawerOpen(object instance)
+        {
+            var that = (global::DrawerLayout.DrawerLayout)instance;
+            return that.IsDrawerOpen;
+        }
+        private void set_0_DrawerLayout_IsDrawerOpen(object instance, object Value)
+        {
+            var that = (global::DrawerLayout.DrawerLayout)instance;
+            that.IsDrawerOpen = (global::System.Boolean)Value;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::arendi.arendi_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::arendi.arendi_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "DrawerLayout.DrawerLayout.IsDrawerOpen":
+                userType = (global::arendi.arendi_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DrawerLayout.DrawerLayout");
+                xamlMember = new global::arendi.arendi_XamlTypeInfo.XamlMember(this, "IsDrawerOpen", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_0_DrawerLayout_IsDrawerOpen;
+                xamlMember.Setter = set_0_DrawerLayout_IsDrawerOpen;
+                break;
+            }
             return xamlMember;
         }
     }

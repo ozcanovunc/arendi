@@ -44,5 +44,10 @@ namespace arendi
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
         }
+
+        private void Main_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Portal));
+        }
     }
 }

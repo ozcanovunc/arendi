@@ -24,8 +24,8 @@
                 <TextBox Name="Main_TextBox_LoginMail"
                          PlaceholderText="Email"
                          BorderThickness="0"
-        		         Background="White"
-        		         BorderBrush="White"
+                         Background="White"
+                         BorderBrush="White"
                          VerticalAlignment="Center"
                          Margin="5,10,5,10"/>
             </Border>
@@ -41,20 +41,21 @@
                 <PasswordBox Name="Main_TextBox_LoginPassword"
                              PlaceholderText="Şifre"
                              BorderThickness="0"
-        		             Background="White"
-        		             BorderBrush="White"
+                             Background="White"
+                             BorderBrush="White"
                              VerticalAlignment="Center"
                              Margin="5,10,5,10"/>
             </Border>
-            <Button Style="{StaticResource Custom_Button}"  
-            	    Name="Main_Button"
-            	    Content="Giriş"
-            	    BorderThickness="2"
-            	    BorderBrush="White"
-            	    VerticalAlignment="Center"
+            <Button x:ConnectionId='1' Style="{StaticResource Custom_Button}"  
+                    Name="Main_Button"
+                    Content="Giriş"
+                    BorderThickness="2"
+                    BorderBrush="White"
+                    VerticalAlignment="Center"
                     Width="400"
-            	    Margin="5,0,0,0" 
-            	    Height="70"/>
+                    Margin="5,0,0,0" 
+                    Height="70" 
+                                             />
         </StackPanel>
 
     </Grid>

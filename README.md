@@ -1,1 +1,2 @@
-# arendi
+# İnovasyon fikir deposu
+

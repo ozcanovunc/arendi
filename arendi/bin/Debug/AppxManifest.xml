@@ -23,7 +23,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="arendi.exe" EntryPoint="arendi.App">
-      <m3:VisualElements DisplayName="arendi" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="arendi" ForegroundText="light" BackgroundColor="transparent">
+      <m3:VisualElements DisplayName="Arendi" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="arendi" ForegroundText="light" BackgroundColor="transparent">
         <m3:DefaultTile Square71x71Logo="Assets\Square71x71Logo.png"></m3:DefaultTile>
         <m3:InitialRotationPreference>
           <m3:Rotation Preference="portrait" />

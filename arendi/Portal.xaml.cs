@@ -1,12 +1,8 @@
-﻿using System;
-using Windows.Phone.UI.Input;
-using Windows.UI.Popups;
+﻿using Windows.Phone.UI.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Navigation;
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
 namespace arendi
 {
@@ -21,7 +17,7 @@ namespace arendi
         }
 
         // DrawerLayout open or close
-        private void DrawerIcon_Tapped(object sender, TappedRoutedEventArgs e)
+        private void MenuIcon_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (DrawerLayout.IsDrawerOpen)
             {
@@ -38,25 +34,23 @@ namespace arendi
             HardwareButtons.BackPressed += OnBackKeyPress;
         }
 
-        private async void Item1_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            MessageDialog dialog = new MessageDialog("TEST");
-            if (dialog != null) await dialog.ShowAsync();
-        }
-
-        private async void Item2_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void Menu1_Tapped(object sender, TappedRoutedEventArgs e)
         {
         }
 
-        private async void Item3_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void Menu2_Tapped(object sender, TappedRoutedEventArgs e)
         {
         }
 
-        private async void Item4_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void Menu3_Tapped(object sender, TappedRoutedEventArgs e)
         {
         }
 
-        private async void Item5_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void Menu4_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+        }
+
+        private async void Menu5_Tapped(object sender, TappedRoutedEventArgs e)
         {
             // TODO: Logout mechanism
         }

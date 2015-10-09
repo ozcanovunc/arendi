@@ -24,6 +24,12 @@
     <AppxPackagedFile Include="A:\arendi\packages\DrawerLayout.1.0.4\lib\DrawerLayout.dll">
       <PackagePath>DrawerLayout.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\arendi\arendi\Assets\defaultpp.jpg">
+      <PackagePath>Assets\defaultpp.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\arendi\arendi\Assets\ic_drawer.png">
+      <PackagePath>Assets\ic_drawer.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="A:\arendi\arendi\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -48,6 +54,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="A:\arendi\arendi\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\arendi\arendi\Fonts\gothic_0.TTF">
+      <PackagePath>Fonts\gothic_0.TTF</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="A:\arendi\arendi\bin\Debug\arendi.xr.xml">
       <PackagePath>arendi.xr.xml</PackagePath>

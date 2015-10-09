@@ -9,105 +9,91 @@
     xmlns:drawerLayout="using:DrawerLayout"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid x:Name="RootLayout">
+    <Grid>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <!--
+            <RowDefinition Height="Auto"/>
+            -->
         </Grid.RowDefinitions>
 
         <!-- Title Bar -->
-        <Grid x:Name="TitleBar" 
-              Background="#FF7B00" 
-              Grid.Row="0" 
-              Height="70">
-
+        <Grid Background="#FF7B00" Grid.Row="0" Height="70">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="Auto" />
-                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-
-            <Image Margin="5,5,5,5"  
-                   x:Name="DrawerIcon"  
-                   Grid.Column="0" 
-                   Source="/Assets/Logo.png" 
-                   HorizontalAlignment="Left" 
-                   Tapped="DrawerIcon_Tapped" 
-                   Grid.ColumnSpan="2" 
-                   Width="60" />
+            <Image Margin="5" Grid.Column="0" Source="/Assets/ic_drawer.png" HorizontalAlignment="Left" Tapped="MenuIcon_Tapped"/>  
         </Grid>
 
         <!-- Drawer Layout -->
-        <drawerLayout:DrawerLayout Grid.Row="1" 
-                                   x:Name="DrawerLayout">
+        <drawerLayout:DrawerLayout Grid.Row="1" x:Name="DrawerLayout">
 
-            <!-- Necessary part somehow -->
-            <Grid x:Name="MainFragment" 
-                  Background="White">
-            </Grid>
+            <!-- The page itself -->
+            <Grid></Grid>
 
-            <Grid x:Name="ListFragment" 
-                  Background="#F4F4F4">
-
+            <!-- TODO: Add rounded corners -->
+            <Grid Background="#FFEFDF">
                 <ScrollViewer>
                     <Grid>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="70"/>
-                            <RowDefinition Height="70"/>
-                            <RowDefinition Height="70"/>
-                            <RowDefinition Height="70"/>
-                            <RowDefinition Height="70"/>
-                            <RowDefinition Height="70"/>
+                            <RowDefinition Height="200"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
+                            <!--
+                            <RowDefinition Height="5"/>
+                            -->
                         </Grid.RowDefinitions>
 
-                        <Grid x:Name="MenuIdentity" Background="Transparent" Grid.Row="0">
-                            <StackPanel Margin="5" 
-                                        Orientation="Horizontal">
-                                <Image Source="/Assets/logo.png" 
-                                       Height="60" 
-                                       Width="60" 
-                                       Stretch="UniformToFill" />
-                                <TextBlock x:Name="FullName" Text="BART SIMPSON" Foreground="Black"  FontSize="18" TextWrapping="Wrap" Margin="10 0 0 0"  />
+                        <!-- User information -->
+                        <Grid Background="Transparent" Grid.Row="0">
+                            <StackPanel>
+                                <Image Margin="30" Source="/Assets/defaultpp.jpg" Height="100" Width="100" Stretch="UniformToFill"/>
+                                <TextBlock Margin="-10" Text="Name Surname" Foreground="Black"  VerticalAlignment="Top" HorizontalAlignment="Center"  FontSize="18" FontWeight="SemiBold" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
                             </StackPanel>
                         </Grid>
 
-                        <Grid x:Name="Item1" Background="Transparent" Grid.Row="1" Tapped="Item1_Tapped">
-                            <Border BorderBrush="#FFE0E0E0" BorderThickness="0 0 0 1" />
-                            <StackPanel Margin="20 10 0 5" VerticalAlignment="Bottom">
-                                <TextBlock Text="Fikirler" Foreground="Black"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  FontSize="18" />
+                        <Grid Background="Transparent" Grid.Row="1" Tapped="Menu1_Tapped">
+                            <Border Background="#FFD9B2" CornerRadius="10" Margin="10,0,10,0" Height="50"/>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBlock Text="Fikirler" Foreground="Black"  VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="18" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
                             </StackPanel>
                         </Grid>
 
-                        <Grid x:Name="Item2" Background="Transparent" Grid.Row="2" Tapped="Item2_Tapped">
-                            <Border BorderBrush="#FFE0E0E0" BorderThickness="0 0 0 1" />
-                            <StackPanel Margin="20 10 0 5" VerticalAlignment="Bottom">
-                                <TextBlock Text="Takip Ettiklerim" Foreground="Black"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  FontSize="18" />
+                        <Grid Background="Transparent" Grid.Row="2" Tapped="Menu2_Tapped">
+                            <Border Background="#FFD9B2" CornerRadius="10" Margin="10,0,10,0" Height="50"/>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBlock Text="Takip Ettiklerim" Foreground="Black"  VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="18" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
                             </StackPanel>
                         </Grid>
 
-                        <Grid x:Name="Item3" Background="Transparent" Grid.Row="3" Tapped="Item3_Tapped">
-                            <Border BorderBrush="#FFE0E0E0" BorderThickness="0 0 0 1" />
-                            <StackPanel Margin="20 10 0 5" VerticalAlignment="Bottom">
-                                <TextBlock Text="Bildirimler" Foreground="Black"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  FontSize="18" />
+                        <Grid Background="Transparent" Grid.Row="3" Tapped="Menu3_Tapped">
+                            <Border Background="#FFD9B2" CornerRadius="10" Margin="10,0,10,0" Height="50"/>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBlock Text="Bildirimler" Foreground="Black"  VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="18" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
                             </StackPanel>
                         </Grid>
 
-                        <Grid x:Name="Item4" Background="Transparent" Grid.Row="4" Tapped="Item4_Tapped">
-                            <Border BorderBrush="#FFE0E0E0" BorderThickness="0 0 0 1" />
-                            <StackPanel Margin="20 10 0 5" VerticalAlignment="Bottom">
-                                <TextBlock Text="Ayarlar" Foreground="Black"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  FontSize="18" />
+                        <Grid Background="Transparent" Grid.Row="4" Tapped="Menu4_Tapped">
+                            <Border Background="#FFD9B2" CornerRadius="10" Margin="10,0,10,0" Height="50"/>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBlock Text="Ayarlar" Foreground="Black"  VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="18" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
                             </StackPanel>
                         </Grid>
 
-                        <Grid x:Name="Item5" Background="Transparent" Grid.Row="5" Tapped="Item5_Tapped">
-                            <Border BorderBrush="#FFE0E0E0" BorderThickness="0 0 0 1" />
-                            <StackPanel Margin="20 10 0 5" VerticalAlignment="Bottom">
-                                <TextBlock Text="Çıkış" Foreground="Black"  VerticalAlignment="Bottom" HorizontalAlignment="Left"  FontSize="18" />
+                        <Grid Background="Transparent" Grid.Row="5" Tapped="Menu5_Tapped">
+                            <Border Background="#FFD9B2" CornerRadius="10" Margin="10,0,10,0" Height="50"/>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBlock Text="Çıkış" Foreground="Black"  VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="18" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
                             </StackPanel>
                         </Grid>
                     </Grid>
                 </ScrollViewer>
-
             </Grid>
         </drawerLayout:DrawerLayout>
     </Grid>

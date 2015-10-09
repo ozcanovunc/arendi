@@ -44,8 +44,10 @@ namespace arendi
             // this event is handled for you.
         }
 
-        private void Main_Button_Click(object sender, RoutedEventArgs e)
+        private void MainPage_LoginButton_Click(object sender, RoutedEventArgs e)
         {
+            // TODO: Login mechanism
+            // Navigate to portal / Portal.xaml
             Frame.Navigate(typeof(Portal));
         }
     }

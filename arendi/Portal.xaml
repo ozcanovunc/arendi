@@ -45,6 +45,7 @@
                             <RowDefinition Height="60"/>
                             <RowDefinition Height="60"/>
                             <RowDefinition Height="60"/>
+                            <RowDefinition Height="60"/>
                             <!--
                             <RowDefinition Height="5"/>
                             -->
@@ -87,6 +88,13 @@
                         </Grid>
 
                         <Grid Background="Transparent" Grid.Row="5" Tapped="Menu5_Tapped">
+                            <Border Background="#FFD9B2" CornerRadius="10" Margin="10,0,10,0" Height="50"/>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBlock Text="Yardım" Foreground="Black"  VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="18" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
+                            </StackPanel>
+                        </Grid>
+                        
+                        <Grid Background="Transparent" Grid.Row="6" Tapped="Menu6_Tapped">
                             <Border Background="#FFD9B2" CornerRadius="10" Margin="10,0,10,0" Height="50"/>
                             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="Çıkış" Foreground="Black"  VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="18" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>

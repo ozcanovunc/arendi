@@ -67,6 +67,9 @@
     <AppxPackagedFile Include="A:\arendi\arendi\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="A:\arendi\arendi\bin\Debug\Page5_Help.xbf">
+      <PackagePath>Page5_Help.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="A:\arendi\arendi\bin\Debug\Portal.xbf">
       <PackagePath>Portal.xbf</PackagePath>
     </AppxPackagedFile>

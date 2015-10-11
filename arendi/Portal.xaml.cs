@@ -11,7 +11,6 @@ namespace arendi
         public Portal()
         {
             this.InitializeComponent();
-
             // Initialization of DrawerLayout menu
             DrawerLayout.InitializeDrawerLayout();
         }
@@ -51,6 +50,11 @@ namespace arendi
         }
 
         private async void Menu5_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Page5_Help));
+        }
+
+        private void Menu6_Tapped(object sender, TappedRoutedEventArgs e)
         {
             // TODO: Logout mechanism
         }

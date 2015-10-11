@@ -25,7 +25,7 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Image x:ConnectionId='6' Margin="5" Grid.Column="0" Source="/Assets/ic_drawer.png" HorizontalAlignment="Left"                         />  
+            <Image x:ConnectionId='7' Margin="5" Grid.Column="0" Source="/Assets/ic_drawer.png" HorizontalAlignment="Left"                         />  
         </Grid>
 
         <!-- Drawer Layout -->
@@ -40,6 +40,7 @@
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="200"/>
+                            <RowDefinition Height="60"/>
                             <RowDefinition Height="60"/>
                             <RowDefinition Height="60"/>
                             <RowDefinition Height="60"/>
@@ -87,6 +88,13 @@
                         </Grid>
 
                         <Grid x:ConnectionId='5' Background="Transparent" Grid.Row="5"                      >
+                            <Border Background="#FFD9B2" CornerRadius="10" Margin="10,0,10,0" Height="50"/>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBlock Text="Yardım" Foreground="Black"  VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="18" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
+                            </StackPanel>
+                        </Grid>
+                        
+                        <Grid x:ConnectionId='6' Background="Transparent" Grid.Row="6"                      >
                             <Border Background="#FFD9B2" CornerRadius="10" Margin="10,0,10,0" Height="50"/>
                             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                                 <TextBlock Text="Çıkış" Foreground="Black"  VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="18" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>

@@ -129,6 +129,7 @@
       <RootProperty Name="FontFamily" />
     </RootType>
     <RootType FullName="arendi.MainPage" />
+    <RootType FullName="arendi.Page5_Help" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>

@@ -10,5 +10,3 @@ MDIL image A:\arendi\arendi\obj\Debug\MDIL\arendi.exe generated successfully.
 
 
 File A:\arendi\arendi\obj\Debug\MSIL\arendi.exe output A:\arendi\arendi\obj\Debug\MDIL\arendi.exe
-Processing file: A:\arendi\arendi\obj\Debug\MSIL\DrawerLayout.dll
-File A:\arendi\arendi\obj\Debug\MSIL\DrawerLayout.dll is not in the compile filter. Skipping.

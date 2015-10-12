@@ -1,4 +1,5 @@
 ﻿using Windows.Phone.UI.Input;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 
@@ -13,13 +14,12 @@ namespace arendi
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            HardwareButtons.BackPressed += OnBackKeyPress;
+            HardwareButtons.BackPressed += ((App)Application.Current).HardwareButtons_BackPressed;
         }
 
-        void OnBackKeyPress(object sender, BackPressedEventArgs e)
+        protected override void OnNavigatingFrom(NavigatingCancelEventArgs e)
         {
-            Frame.GoBack();
+            HardwareButtons.BackPressed -= ((App)Application.Current).HardwareButtons_BackPressed;
         }
-
     }
 }

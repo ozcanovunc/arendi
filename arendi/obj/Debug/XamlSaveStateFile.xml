@@ -1,6 +1,5 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\ozcanovunc\documents\visual studio 2015\projects\arendi\arendi\obj\debug\intermediatexaml\arendi.exe" HashGuid="3e278588-9b73-c930-198e-6bfe0fce90c3" />
-    <ReferenceAssembly PathName="a:\arendi\packages\drawerlayout.1.0.4\lib\drawerlayout.dll" HashGuid="b0d3b3f8-90b7-6a66-b416-66f64dcf26fa" />
+    <LocalAssembly PathName="a:\arendi\arendi\obj\debug\intermediatexaml\arendi.exe" HashGuid="7b59976c-5f8b-85c3-7b83-c1b4eb49fb59" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

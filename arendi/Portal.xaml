@@ -10,7 +10,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -28,81 +28,10 @@
             <Image Margin="5" Grid.Column="0" Source="/Assets/ic_drawer.png" HorizontalAlignment="Left" Tapped="MenuIcon_Tapped"/>  
         </Grid>
 
-        <!-- Drawer Layout -->
-        <drawerLayout:DrawerLayout Grid.Row="1" x:Name="DrawerLayout">
+        <!-- Page itself -->
+        <Grid Background="#FFD9B2" Grid.Row="1">
 
-            <!-- The page itself -->
-            <Grid></Grid>
-
-            <!-- TODO: Add rounded corners -->
-            <Grid Background="#FFEFDF">
-                <ScrollViewer>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="200"/>
-                            <RowDefinition Height="60"/>
-                            <RowDefinition Height="60"/>
-                            <RowDefinition Height="60"/>
-                            <RowDefinition Height="60"/>
-                            <RowDefinition Height="60"/>
-                            <RowDefinition Height="60"/>
-                            <!--
-                            <RowDefinition Height="5"/>
-                            -->
-                        </Grid.RowDefinitions>
-
-                        <!-- User information -->
-                        <Grid Background="Transparent" Grid.Row="0">
-                            <StackPanel>
-                                <Image Margin="30" Source="/Assets/defaultpp.jpg" Height="100" Width="100" Stretch="UniformToFill"/>
-                                <TextBlock Margin="-10" Text="Name Surname" Foreground="Black"  VerticalAlignment="Top" HorizontalAlignment="Center"  FontSize="18" FontWeight="SemiBold" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
-                            </StackPanel>
-                        </Grid>
-
-                        <Grid Background="Transparent" Grid.Row="1" Tapped="Menu1_Tapped">
-                            <Border Background="#FFD9B2" CornerRadius="10" Margin="10,0,10,0" Height="50"/>
-                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                                <TextBlock Text="Fikirler" Foreground="Black"  VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="18" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
-                            </StackPanel>
-                        </Grid>
-
-                        <Grid Background="Transparent" Grid.Row="2" Tapped="Menu2_Tapped">
-                            <Border Background="#FFD9B2" CornerRadius="10" Margin="10,0,10,0" Height="50"/>
-                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                                <TextBlock Text="Takip Ettiklerim" Foreground="Black"  VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="18" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
-                            </StackPanel>
-                        </Grid>
-
-                        <Grid Background="Transparent" Grid.Row="3" Tapped="Menu3_Tapped">
-                            <Border Background="#FFD9B2" CornerRadius="10" Margin="10,0,10,0" Height="50"/>
-                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                                <TextBlock Text="Bildirimler" Foreground="Black"  VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="18" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
-                            </StackPanel>
-                        </Grid>
-
-                        <Grid Background="Transparent" Grid.Row="4" Tapped="Menu4_Tapped">
-                            <Border Background="#FFD9B2" CornerRadius="10" Margin="10,0,10,0" Height="50"/>
-                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                                <TextBlock Text="Ayarlar" Foreground="Black"  VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="18" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
-                            </StackPanel>
-                        </Grid>
-
-                        <Grid Background="Transparent" Grid.Row="5" Tapped="Menu5_Tapped">
-                            <Border Background="#FFD9B2" CornerRadius="10" Margin="10,0,10,0" Height="50"/>
-                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                                <TextBlock Text="Yardım" Foreground="Black"  VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="18" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
-                            </StackPanel>
-                        </Grid>
-                        
-                        <Grid Background="Transparent" Grid.Row="6" Tapped="Menu6_Tapped">
-                            <Border Background="#FFD9B2" CornerRadius="10" Margin="10,0,10,0" Height="50"/>
-                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-                                <TextBlock Text="Çıkış" Foreground="Black"  VerticalAlignment="Center" HorizontalAlignment="Center"  FontSize="18" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
-                            </StackPanel>
-                        </Grid>
-                    </Grid>
-                </ScrollViewer>
-            </Grid>
-        </drawerLayout:DrawerLayout>
+        </Grid>
+        
     </Grid>
 </Page>

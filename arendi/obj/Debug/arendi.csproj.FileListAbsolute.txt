@@ -1,37 +1,7 @@
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\bin\Debug\App.xbf
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\bin\Debug\MainPage.xbf
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\bin\Debug\arendi.xr.xml
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\bin\Debug\arendi.exe
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\bin\Debug\arendi.pdb
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\bin\Debug\resources.pri
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\bin\Debug\AppxManifest.xml
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\bin\Debug\arendi.build.appxrecipe
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\App.g.i.cs
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\App.g.cs
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\MainPage.g.i.cs
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\MainPage.g.cs
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\XamlTypeInfo.g.cs
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\XamlSaveStateFile.xml
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\App.xaml
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\MainPage.xaml
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\App.xbf
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\MainPage.xbf
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\arendi.exe
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\arendi.pdb
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\priconfig.xml
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\priconfig.xml.intermediate
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\layout.resfiles
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\layout.resfiles.intermediate
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\resources.resfiles
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\resources.resfiles.intermediate
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\pri.resfiles
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\pri.resfiles.intermediate
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\qualifiers.txt
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\qualifiers.txt.intermediate
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\MultipleQualifiersPerDimensionFound.txt
-c:\users\ozcanovunc\documents\visual studio 2015\Projects\arendi\arendi\obj\Debug\ProjectArchitectures.txt
 A:\arendi\arendi\bin\Debug\App.xbf
 A:\arendi\arendi\bin\Debug\MainPage.xbf
+A:\arendi\arendi\bin\Debug\Menu.xbf
+A:\arendi\arendi\bin\Debug\Page5_Help.xbf
 A:\arendi\arendi\bin\Debug\Portal.xbf
 A:\arendi\arendi\bin\Debug\arendi.xr.xml
 A:\arendi\arendi\bin\Debug\arendi.exe
@@ -39,25 +9,30 @@ A:\arendi\arendi\bin\Debug\arendi.pdb
 A:\arendi\arendi\bin\Debug\resources.pri
 A:\arendi\arendi\bin\Debug\AppxManifest.xml
 A:\arendi\arendi\bin\Debug\arendi.build.appxrecipe
-A:\arendi\arendi\bin\Debug\DrawerLayout.dll
-A:\arendi\arendi\obj\Debug\arendi.csprojResolveAssemblyReference.cache
 A:\arendi\arendi\obj\Debug\App.g.i.cs
 A:\arendi\arendi\obj\Debug\App.g.cs
 A:\arendi\arendi\obj\Debug\MainPage.g.i.cs
 A:\arendi\arendi\obj\Debug\MainPage.g.cs
+A:\arendi\arendi\obj\Debug\Menu.g.i.cs
+A:\arendi\arendi\obj\Debug\Menu.g.cs
+A:\arendi\arendi\obj\Debug\Page5_Help.g.i.cs
+A:\arendi\arendi\obj\Debug\Page5_Help.g.cs
 A:\arendi\arendi\obj\Debug\Portal.g.i.cs
 A:\arendi\arendi\obj\Debug\Portal.g.cs
 A:\arendi\arendi\obj\Debug\XamlTypeInfo.g.cs
+A:\arendi\arendi\obj\Debug\XamlSaveStateFile.xml
 A:\arendi\arendi\obj\Debug\App.xaml
 A:\arendi\arendi\obj\Debug\MainPage.xaml
+A:\arendi\arendi\obj\Debug\Menu.xaml
+A:\arendi\arendi\obj\Debug\Page5_Help.xaml
+A:\arendi\arendi\obj\Debug\Portal.xaml
 A:\arendi\arendi\obj\Debug\App.xbf
 A:\arendi\arendi\obj\Debug\MainPage.xbf
-A:\arendi\arendi\obj\Debug\XamlSaveStateFile.xml
-A:\arendi\arendi\obj\Debug\Portal.xaml
+A:\arendi\arendi\obj\Debug\Menu.xbf
+A:\arendi\arendi\obj\Debug\Page5_Help.xbf
 A:\arendi\arendi\obj\Debug\Portal.xbf
 A:\arendi\arendi\obj\Debug\arendi.exe
 A:\arendi\arendi\obj\Debug\arendi.pdb
-A:\arendi\arendi\obj\Debug\arendi.csproj.GenerateResource.Cache
 A:\arendi\arendi\obj\Debug\priconfig.xml
 A:\arendi\arendi\obj\Debug\priconfig.xml.intermediate
 A:\arendi\arendi\obj\Debug\layout.resfiles
@@ -70,8 +45,3 @@ A:\arendi\arendi\obj\Debug\qualifiers.txt
 A:\arendi\arendi\obj\Debug\qualifiers.txt.intermediate
 A:\arendi\arendi\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 A:\arendi\arendi\obj\Debug\ProjectArchitectures.txt
-A:\arendi\arendi\bin\Debug\Page5_Help.xbf
-A:\arendi\arendi\obj\Debug\Page5_Help.g.i.cs
-A:\arendi\arendi\obj\Debug\Page5_Help.g.cs
-A:\arendi\arendi\obj\Debug\Page5_Help.xaml
-A:\arendi\arendi\obj\Debug\Page5_Help.xbf

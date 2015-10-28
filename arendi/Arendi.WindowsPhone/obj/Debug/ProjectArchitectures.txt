@@ -1,1 +1,1 @@
-C:\Users\ozcanovunc\Documents\Visual Studio 2015\Projects\Arendi\Arendi\Arendi.WindowsPhone\Arendi.WindowsPhone.csproj;neutral
+A:\Documents\4\495\arendi\Arendi\Arendi.WindowsPhone\Arendi.WindowsPhone.csproj;neutral

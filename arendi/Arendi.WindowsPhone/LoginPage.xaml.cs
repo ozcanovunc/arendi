@@ -26,7 +26,6 @@ namespace Arendi
 
         private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
         {
-            // TODO: Are you sure you want to exit?
             Application.Current.Exit();
         }
 

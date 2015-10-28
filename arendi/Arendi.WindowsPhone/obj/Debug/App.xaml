@@ -6,8 +6,7 @@
     
     <Application.Resources>
 
-
-
+        <!-- Not used -->
         <Style x:Key="Custom_Hub" TargetType="Hub">
             <Setter Property="HeaderTemplate">
                 <Setter.Value>
@@ -15,7 +14,7 @@
                         <TextBlock 
                             Text="{Binding}"
                             Margin="0,20,0,0"
-                            FontSize="70"
+                            FontSize="40"
                             Foreground="White"
                             FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
                     </DataTemplate>
@@ -29,14 +28,14 @@
                     <DataTemplate>
                         <TextBlock 
                             Text="{Binding}"
-                            FontSize="25"
+                            FontSize="40"
                             Foreground="White"
                             FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
                     </DataTemplate>
                 </Setter.Value>
             </Setter>
         </Style>
-        
+
         <Style x:Key="Custom_Button" TargetType="Button">
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderBrush" Value="{StaticResource PhoneForegroundBrush}"/>

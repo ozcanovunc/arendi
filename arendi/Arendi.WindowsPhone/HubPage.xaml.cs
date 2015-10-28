@@ -4,6 +4,7 @@ using System;
 using Windows.ApplicationModel.Resources;
 using Windows.Graphics.Display;
 using Windows.Phone.UI.Input;
+using Windows.UI.Popups;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -140,10 +141,24 @@ namespace Arendi
 
         private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
         {
-            // TODO: Are you sure you want to exit?
             Application.Current.Exit();
         }
 
         #endregion
+
+        private async void AppBarButton3_Event(object sender, RoutedEventArgs e)
+        {
+            MessageDialog msgbox = 
+                new MessageDialog("Oturumu kapatmak istediğinizden emin misiniz?", "Oturumu kapat");
+            msgbox.Commands.Add(new UICommand { Label = "Evet", Id = 0 });
+            msgbox.Commands.Add(new UICommand { Label = "Hayır", Id = 1 });
+            var res = await msgbox.ShowAsync();
+
+            if ((int)res.Id == 0)
+            {
+                // TODO: Logout mechanism
+                Application.Current.Exit();
+            }
+        }
     }
 }

@@ -9,7 +9,21 @@
     d:DataContext="{Binding Source={d:DesignData Source=../Arendi.Shared/DataModel/SampleData.json, Type=data:SampleDataSource}}"
     xmlns:data="using:Arendi.Data"
     mc:Ignorable="d">
-
+    
+    <Page.BottomAppBar>
+        <CommandBar IsSticky="True" x:Name="appBar" Background="#FF950E">
+            <CommandBar.PrimaryCommands>
+                <!--<AppBarButton Icon="ZoomOut" IsCompact="False" Label="ZoomOut"/>-->
+                <!--<AppBarButton Icon="ZoomIn" IsCompact="False" Label="ZoomIn"/> -->
+            </CommandBar.PrimaryCommands>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Label="Ayarlar"/>
+                <AppBarButton Label="Yardım"/>
+                <AppBarButton Label="Çıkış" Click="AppBarButton3_Event"/>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+    
     <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.ThemeDictionaries>
@@ -70,9 +84,10 @@
         </ResourceDictionary>
     </Page.Resources>
 
+
     <Grid x:Name="LayoutRoot">
-        <Hub x:Name="Hub" Header="Fikir Deposu" Background="{ThemeResource HubBackgroundImageBrush}" Style="{StaticResource Custom_Hub}">
-            <HubSection Margin="0,10,0,0" Header="FİKİRLER" DataContext="{Binding Groups}" Style="{StaticResource Custom_HubSection}">
+        <Hub x:Name="Hub" Header="FİKİR DEPOSU" Background="{ThemeResource HubBackgroundImageBrush}" Style="{StaticResource Custom_Hub}">
+            <HubSection Margin="0,10,0,0" Header="fikirler" DataContext="{Binding Groups}" Style="{StaticResource Custom_HubSection}">
                 <!--
                 <DataTemplate>
                     <ListView
@@ -92,7 +107,7 @@
                 -->
             </HubSection>
 
-            <HubSection Margin="0,10,0,0"  Header="TAKİP ETTİKLERİM" Width="Auto"
+            <HubSection Margin="0,10,0,0"  Header="takip ettiklerim" Width="Auto"
                          DataContext="{Binding Groups[0]}" Style="{StaticResource Custom_HubSection}">
                 <!--
                 <DataTemplate>
@@ -116,7 +131,7 @@
                 -->
             </HubSection>
 
-            <HubSection Margin="0,10,0,0"  Header="BİLDİRİMLER"
+            <HubSection Margin="0,10,0,0"  Header="bildirimler"
                         DataContext="{Binding Groups[1]}" Style="{StaticResource Custom_HubSection}">
                 <!--
                 <DataTemplate>

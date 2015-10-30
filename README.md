@@ -27,5 +27,5 @@
 - Özellikle sahada veya üretimde çalışan personelin zaman ve mekan sıkıntılarının, kurumsal Ar-Ge süreçlerine katılımdaki çekingen yapısı mobil uygulamanın çok kolay kullanılabilir ve veri girilebilir bir modelde tasarlanması ile en aza indirilmesi.
 - Çoklu değerlendirme personeli ile etkin değerlendirme panel performansı. 
 - Sayısal olarak yetkilerin kayıt altında kullanıcı adı ile birlikte tutulması, fikirlerin kullanıcı adı silinse bile sahiplerinin korunmasını sağlayacak altyapı.
-- Sistemde oluşturulan fikirlerin değerlendirilmesi için oylama, swot analizi ve soru ile geliştirme yöntemleri, yetkilendirilmiş çalışan grubunu fikir sahibi ile sistem üzerinde birlikte çalışma ortamında birleştirerek uygulanacaktır.
-- Bu sayede yenilikçi fikirler kurum içinde özgürce ve adil bir biçimde tartışılabilecek, geliştirilebilecek, gerektiğinde fikir sahibi ödüllendirilebilecektir.
+- Sistemde oluşturulan fikirlerin değerlendirilmesi için oylama, swot analizi ve soru ile geliştirme yöntemleri, yetkilendirilmiş çalışan grubunu fikir sahibi ile sistem üzerinde birlikte çalışma ortamında birleştirerek uygulanması.
+- Bu sayede yenilikçi fikirler kurum içinde özgürce ve adil bir biçimde tartışılabilecek, geliştirilebilecek, gerektiğinde fikir sahibinin ödüllendirilmesi.

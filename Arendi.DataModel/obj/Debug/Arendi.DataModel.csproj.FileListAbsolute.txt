@@ -1,0 +1,5 @@
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.DataModel\bin\Debug\Arendi.DataModel.dll
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.DataModel\bin\Debug\Arendi.DataModel.pdb
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.DataModel\obj\Debug\Arendi.DataModel.csprojResolveAssemblyReference.cache
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.DataModel\obj\Debug\Arendi.DataModel.dll
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.DataModel\obj\Debug\Arendi.DataModel.pdb

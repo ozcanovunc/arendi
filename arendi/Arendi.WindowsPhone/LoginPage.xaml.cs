@@ -1,4 +1,6 @@
-﻿using Windows.Phone.UI.Input;
+﻿using System;
+using System.Diagnostics;
+using Windows.Phone.UI.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
@@ -29,10 +31,20 @@ namespace Arendi
             Application.Current.Exit();
         }
 
-        private void MainPage_LoginButton_Click(object sender, RoutedEventArgs e)
+        private async void MainPage_LoginButton_Click(object sender, RoutedEventArgs e)
         {
+            try {
+
+                var list = await Controllers.UserController.UpdateUserByEmail("rt", "a", "a", "a", "a");
+                    Debug.WriteLine(list);
+
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.ToString());
+            }
             // TODO: Login mechanism
-            Frame.Navigate(typeof(HubPage));
+            //Frame.Navigate(typeof(HubPage));
         }
     }
 }

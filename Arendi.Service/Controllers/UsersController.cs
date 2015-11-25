@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using System.Data;
 using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
-using System.Web.Http.Description;
 using Arendi.Service.Models;
 
 namespace Arendi.Service.Controllers
@@ -16,49 +10,66 @@ namespace Arendi.Service.Controllers
     {
         private ArendiDBEntities db = new ArendiDBEntities();
 
-        [Route("get/userbymail")]
+        // TODO: NotFound stuff
+        [Route("get/getuserbyemail")]
         [HttpGet]
         public IHttpActionResult GetUserByEmail(string email)
         {
-            IQueryable<User> user;
+            User user;
+
             try
             {
-                user = db.Users.Where(u => u.Email == email);
+                user = db.Users.Where(u => u.Email == email).First();
                 return Ok(user);
             }
             catch
             {
-                return NotFound();
+                return Ok();
+                //return NotFound();
             }
-        }
+        }// GetUserByEmail
 
-        [Route("get/userbyid")]
+        // TODO: NotFound stuff
+        [Route("get/getuserbyid")]
         [HttpGet]
         public IHttpActionResult GetUserById(int id)
         {
-            IQueryable<User> user;
+            User user;
+
             try
             {
-                user = db.Users.Where(u => u.ID == id);
+                user = db.Users.Where(u => u.ID == id).First();
                 return Ok(user);
             }
             catch
             {
-                return NotFound();
+                return Ok();
+                //return NotFound();
             }
-        }
+        }// GetUserById
 
-        // TODO: async?
-        // TODO: Instead of getting old_user as parameter, get id or email and search for it
-        [Route("get/updateuser")]
+        // TODO: async, performance issues
+        [Route("get/updateuserbyemail")]
         [HttpGet]
-        public bool UpdateUser(User old_user, User new_user)
+        public bool UpdateUserByEmail(string old_email, string new_username, 
+            string new_password, string new_email, string new_type)
         {
-            User user;
+            User old_user;
+            User new_user = new User
+            {
+                Username = new_username,
+                Password = new_password,
+                Email = new_email,
+                Type = new_type
+            };
+
             try
             {
-                user = db.Users.Where(u => u == old_user).First();
-                user = new_user;
+                old_user = db.Users.Where(u => u.Email == old_email).First();
+                db.Entry(old_user).Entity.Username = new_username;
+                db.Entry(old_user).Entity.Password = new_password;
+                db.Entry(old_user).Entity.Email = new_email;
+                db.Entry(old_user).Entity.Type = new_type;
                 db.SaveChangesAsync();
                 return true;
             }
@@ -66,17 +77,17 @@ namespace Arendi.Service.Controllers
             {
                 return false;
             }
-        }
+        }// UpdateUser
 
-        // TODO: Instead of getting user_to_delete as parameter, get id or email
-        [Route("get/deleteuser")]
+        [Route("get/deleteuserbyemail")]
         [HttpGet]
-        public bool DeleteUser(User user_to_delete)
+        public bool DeleteUserByEmail(string email)
         {
             User user;
+
             try
             {
-                user = db.Users.Where(u => u == user_to_delete).First();
+                user = db.Users.Where(u => u.Email == email).First();
                 db.Entry(user).State = EntityState.Deleted;
                 db.SaveChanges();
                 return true;
@@ -85,19 +96,24 @@ namespace Arendi.Service.Controllers
             {
                 return false;
             }
-        }
+        }// DeleteUser
 
         [Route("get/adduser")]
         [HttpGet]
-        public bool AddUser(User user_to_add)
+        public bool AddUser(string username, string password, string email, string type)
         {
-            User user;
+            User user_to_add = new User
+            {
+                Username = username,
+                Password = password,
+                Email = email,
+                Type = type
+            };
+
             try
             {
-                user = db.Users.Where(u => u == user_to_add).First();
-
                 // If user_to_add exists, do not add again
-                if (user != null)
+                if (db.Users.Where(u => u.Email == email).Count() != 0)
                     return false;
 
                 db.Users.Add(user_to_add);
@@ -108,7 +124,6 @@ namespace Arendi.Service.Controllers
             {
                 return false;
             }
-        }
-
+        }// AddUser
     }
 }

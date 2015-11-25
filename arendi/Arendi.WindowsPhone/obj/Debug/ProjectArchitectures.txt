@@ -1,1 +1,2 @@
-A:\Documents\4\495\arendi\Arendi\Arendi.WindowsPhone\Arendi.WindowsPhone.csproj;neutral
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.DataModel\Arendi.DataModel.csproj;neutral
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\Arendi.WindowsPhone.csproj;neutral

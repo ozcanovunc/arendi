@@ -29,3 +29,4 @@ C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.Service\bin\System.Web.Http.x
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.Service\bin\System.Web.Http.WebHost.xml
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.Service\obj\Debug\Arendi.Service.dll
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.Service\obj\Debug\Arendi.Service.pdb
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.Service\obj\Debug\Arendi.Service.csprojResolveAssemblyReference.cache

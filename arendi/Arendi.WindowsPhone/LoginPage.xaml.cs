@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Arendi.DataModel;
+using System;
 using System.Diagnostics;
 using Windows.Phone.UI.Input;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
@@ -30,21 +32,42 @@ namespace Arendi
         {
             Application.Current.Exit();
         }
-
+        // TODO: Store login data
         private async void MainPage_LoginButton_Click(object sender, RoutedEventArgs e)
         {
             try {
 
-                var list = await Controllers.UserController.UpdateUserByEmail("rt", "a", "a", "a", "a");
-                    Debug.WriteLine(list);
+                User user = await Controllers.UserController.GetUserByEmail(LoginPage_MailText.Text);
 
+                // Email or password has not been typed
+                if (LoginPage_PasswordText.Password.Equals(String.Empty) ||
+                    LoginPage_MailText.Text.Equals(String.Empty))
+                {
+                    MessageDialog msgbox = new MessageDialog("Email ya da şifre boş bırakılamaz!", "Hata");
+                    await msgbox.ShowAsync();
+                }
+                // Authentication successful
+                else if (user != null && user.Password.Equals(LoginPage_PasswordText.Password))
+                {
+                    Frame.Navigate(typeof(HubPage));
+                }
+                // Password is not correct
+                else if (user != null && !user.Password.Equals(LoginPage_PasswordText.Password))
+                {
+                    MessageDialog msgbox = new MessageDialog("Yanlış ya da eksik şifre girdiniz!", "Hata");
+                    await msgbox.ShowAsync();
+                }
+                // There is no such user
+                else if (user == null)
+                {
+                    MessageDialog msgbox = new MessageDialog("Belirtilen email ile kayıtlı kullanıcı bulunamadı!", "Hata");
+                    await msgbox.ShowAsync();
+                }
             }
             catch (Exception ex)
             {
                 Debug.WriteLine(ex.ToString());
             }
-            // TODO: Login mechanism
-            //Frame.Navigate(typeof(HubPage));
         }
     }
 }

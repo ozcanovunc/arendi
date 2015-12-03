@@ -81,17 +81,23 @@
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\HubPage.xbf">
-      <PackagePath>HubPage.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\HubPage.xbf">
+      <PackagePath>Pages\HubPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\LoginPage.xbf">
-      <PackagePath>LoginPage.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\LoginPage.xbf">
+      <PackagePath>Pages\LoginPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\SectionPage.xbf">
-      <PackagePath>SectionPage.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\MainPage.xbf">
+      <PackagePath>Pages\MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\ItemPage.xbf">
-      <PackagePath>ItemPage.xbf</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\SectionPage.xbf">
+      <PackagePath>Pages\SectionPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\ItemPage.xbf">
+      <PackagePath>Pages\ItemPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\SignupPage.xbf">
+      <PackagePath>Pages\SignupPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

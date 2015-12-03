@@ -124,6 +124,22 @@ namespace Arendi.Service.Controllers
             {
                 return false;
             }
+            /*
+            catch(System.Data.Entity.Validation.DbEntityValidationException dbEx)
+            {
+                string error = "";
+                foreach (var validationErrors in dbEx.EntityValidationErrors)
+                {
+                    foreach (var validationError in validationErrors.ValidationErrors)
+                    {
+                        error += validationError.PropertyName.ToString() 
+                        + " " + validationError.ErrorMessage.ToString() + "\n";
+                    }
+                }
+                return error;
+            }
+            */
+
         }// AddUser
     }
 }

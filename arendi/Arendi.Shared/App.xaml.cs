@@ -16,6 +16,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 using Arendi.Common;
+using Windows.Storage;
 
 namespace Arendi
 {
@@ -24,18 +25,15 @@ namespace Arendi
 #if WINDOWS_PHONE_APP
         private TransitionCollection transitions;
 #endif
+        public static ApplicationDataContainer RoamingSettings;
+
         public App()
         {
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
+            RoamingSettings = ApplicationData.Current.RoamingSettings;
         }
 
-        /// <summary>
-        /// Invoked when the application is launched normally by the end user.  Other entry points
-        /// will be used when the application is launched to open a specific file, to display
-        /// search results, and so forth.
-        /// </summary>
-        /// <param name="e">Details about the launch request and process.</param>
         protected async override void OnLaunched(LaunchActivatedEventArgs e)
         {
 #if DEBUG
@@ -95,12 +93,15 @@ namespace Arendi
                 rootFrame.Navigated += this.RootFrame_FirstNavigated;
 #endif
 
-                // When the navigation stack isn't restored navigate to the first page,
-                // configuring the new page by passing required information as a navigation
-                // parameter
-                if (!rootFrame.Navigate(typeof(LoginPage), e.Arguments))
+                // Navigation to root
+                if (RoamingSettings.Values["Loggedin"] == null || 
+                    RoamingSettings.Values["Loggedin"].Equals(false))
                 {
-                    throw new Exception("Failed to create initial page");
+                    rootFrame.Navigate(typeof(MainPage), e.Arguments);
+                }
+                else
+                {
+                    rootFrame.Navigate(typeof(HubPage), e.Arguments);
                 }
             }
 

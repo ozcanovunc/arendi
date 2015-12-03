@@ -3,6 +3,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Arendi.DataModel;
 using Newtonsoft.Json;
+using System.Diagnostics;
 
 namespace Arendi.Controllers
 {

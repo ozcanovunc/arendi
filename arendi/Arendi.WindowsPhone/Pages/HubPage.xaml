@@ -19,7 +19,7 @@
             <CommandBar.SecondaryCommands>
                 <AppBarButton Label="Ayarlar"/>
                 <AppBarButton Label="Yardım"/>
-                <AppBarButton x:ConnectionId='1' Label="Çıkış"                            />
+                <AppBarButton Label="Çıkış" Click="AppBarButton3_Event"/>
             </CommandBar.SecondaryCommands>
         </CommandBar>
     </Page.BottomAppBar>
@@ -28,7 +28,7 @@
         <ResourceDictionary>
             <ResourceDictionary.ThemeDictionaries>
                 <ResourceDictionary x:Key="Default">
-                    <ImageBrush x:Key="HubBackgroundImageBrush" ImageSource="Assets/HubBackground.theme-light.png"/>
+                    <ImageBrush x:Key="HubBackgroundImageBrush" ImageSource="../Assets/HubBackground.theme-light.png"/>
                 </ResourceDictionary>
                 <ResourceDictionary x:Key="HighContrast">
                     <ImageBrush x:Key="HubBackgroundImageBrush" ImageSource="{x:Null}"/>
@@ -152,4 +152,3 @@
         </Hub>
     </Grid>
 </Page>
-

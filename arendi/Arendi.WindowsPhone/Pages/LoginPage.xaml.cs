@@ -32,8 +32,8 @@ namespace Arendi
         {
             Application.Current.Exit();
         }
-        // TODO: Store login data
-        private async void MainPage_LoginButton_Click(object sender, RoutedEventArgs e)
+
+        private async void LoginPage_LoginButton_Click(object sender, RoutedEventArgs e)
         {
             try {
 
@@ -49,6 +49,9 @@ namespace Arendi
                 // Authentication successful
                 else if (user != null && user.Password.Equals(LoginPage_PasswordText.Password))
                 {
+                    // Store login information
+                    App.RoamingSettings.Values["Loggedin"] = true;
+
                     Frame.Navigate(typeof(HubPage));
                 }
                 // Password is not correct
@@ -64,9 +67,10 @@ namespace Arendi
                     await msgbox.ShowAsync();
                 }
             }
-            catch (Exception ex)
+            catch
             {
-                Debug.WriteLine(ex.ToString());
+                MessageDialog msgbox = new MessageDialog("İnternet bağlantınızı kontrol edin!", "Hata");
+                await msgbox.ShowAsync();
             }
         }
     }

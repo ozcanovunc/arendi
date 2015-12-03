@@ -106,6 +106,7 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Name" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Tools.DirectUI.ProxyTypes.TemplateBindingExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.ContentControl">
@@ -183,6 +184,7 @@
     <RootType FullName="Arendi.HubPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
       <RootProperty Name="Name" />
+      <RootProperty Name="MaxLength" />
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Background" />
@@ -193,6 +195,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Name" />
+      <RootProperty Name="MaxLength" />
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Background" />
@@ -202,6 +205,7 @@
       <RootProperty Name="FontFamily" />
     </RootType>
     <RootType FullName="Arendi.LoginPage" />
+    <RootType FullName="Arendi.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.NavigationThemeTransition">
       <RootProperty Name="DefaultNavigationTransitionInfo" />
@@ -223,5 +227,6 @@
     </RootType>
     <RootType FullName="Arendi.SectionPage" />
     <RootType FullName="Arendi.ItemPage" />
+    <RootType FullName="Arendi.SignupPage" />
   </Roots.RootTypes>
 </Roots>

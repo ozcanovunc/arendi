@@ -35,6 +35,10 @@ namespace Arendi
 
         private async void LoginPage_LoginButton_Click(object sender, RoutedEventArgs e)
         {
+
+            this.IsEnabled = false;
+            LoginPage_ProcessRing.IsActive = true;
+
             try {
 
                 User user = await Controllers.UserController.GetUserByEmail(LoginPage_MailText.Text);
@@ -71,6 +75,11 @@ namespace Arendi
             {
                 MessageDialog msgbox = new MessageDialog("İnternet bağlantınızı kontrol edin!", "Hata");
                 await msgbox.ShowAsync();
+            }
+            finally
+            {
+                LoginPage_ProcessRing.IsActive = false;
+                this.IsEnabled = true;
             }
         }
     }

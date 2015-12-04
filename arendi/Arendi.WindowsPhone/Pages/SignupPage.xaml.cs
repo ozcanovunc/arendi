@@ -35,6 +35,9 @@ namespace Arendi
 
         private async void SignupPage_SignupButton_Click(object sender, RoutedEventArgs e)
         {
+            this.IsEnabled = false;
+            SignupPage_ProcessRing.IsEnabled = true;
+
             try {
                 var error_flag = false;
                 var red_color = new SolidColorBrush(Colors.Red);
@@ -107,6 +110,11 @@ namespace Arendi
                 MessageDialog msgbox = 
                     new MessageDialog("İnternet bağlantınızı kontrol edin!", "Hata");
                 await msgbox.ShowAsync();
+            }
+            finally
+            {
+                SignupPage_ProcessRing.IsEnabled = false;
+                this.IsEnabled = true;
             }
         }
     }

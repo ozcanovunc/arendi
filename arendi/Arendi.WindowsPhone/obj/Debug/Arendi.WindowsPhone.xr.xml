@@ -182,6 +182,11 @@
       <RootMethod Name="SetAutomationId" />
     </RootType>
     <RootType FullName="Arendi.HubPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
+      <RootProperty Name="Name" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Opacity" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
       <RootProperty Name="Name" />
       <RootProperty Name="MaxLength" />

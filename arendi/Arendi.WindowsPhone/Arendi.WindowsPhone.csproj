@@ -84,6 +84,7 @@
     <Content Include="Fonts\gothic_0.TTF" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CompanyController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Pages\HubPage.xaml.cs">
       <DependentUpon>HubPage.xaml</DependentUpon>

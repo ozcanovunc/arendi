@@ -26,6 +26,7 @@ namespace Arendi
         private TransitionCollection transitions;
 #endif
         public static ApplicationDataContainer RoamingSettings;
+        public readonly static string BaseAddress = "http://localhost:6351/get/";
 
         public App()
         {

@@ -1,15 +1,14 @@
-﻿using Windows.Phone.UI.Input;
+﻿using System.Net.NetworkInformation;
+using Windows.Phone.UI.Input;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
+using System;
+using System.Threading.Tasks;
 
 namespace Arendi
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainPage : Page
     {
         public MainPage()
@@ -29,9 +28,12 @@ namespace Arendi
             HardwareButtons.BackPressed -= HardwareButtons_BackPressed;
         }
 
-        private void MainPage_SignupButton_Click(object sender, RoutedEventArgs e)
+        private async void MainPage_SignupButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(SignupPage));
+            if (await IsNetworkAvailable())
+                Frame.Navigate(typeof(SignupPage));
+            else
+                Application.Current.Exit();
         }
 
         private void HardwareButtons_BackPressed(object sender, BackPressedEventArgs e)
@@ -39,9 +41,28 @@ namespace Arendi
             Application.Current.Exit();
         }
 
-        private void MainPage_LoginButton_Click(object sender, RoutedEventArgs e)
+        private async void MainPage_LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(LoginPage));
+            if (await IsNetworkAvailable())
+                Frame.Navigate(typeof(LoginPage));
+            else
+                Application.Current.Exit();
+        }
+
+        private async Task<bool> IsNetworkAvailable()
+        {
+            // Check internet connectivity
+            if (!NetworkInterface.GetIsNetworkAvailable())
+            {
+                MessageDialog msgbox =
+                    new MessageDialog("İnternet bağlantınızı kontrol edin!", "Hata");
+                await msgbox.ShowAsync();
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }

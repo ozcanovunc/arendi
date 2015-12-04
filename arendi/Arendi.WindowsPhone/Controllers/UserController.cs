@@ -3,7 +3,6 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Arendi.DataModel;
 using Newtonsoft.Json;
-using System.Diagnostics;
 
 namespace Arendi.Controllers
 {
@@ -11,7 +10,7 @@ namespace Arendi.Controllers
     {
         private static readonly HttpClient UserControllerClient = new HttpClient
         {
-            BaseAddress = new Uri("http://localhost:6351/get/")
+            BaseAddress = new Uri(App.BaseAddress)
         };
 
         public static async Task<User> GetUserByEmail(string email)

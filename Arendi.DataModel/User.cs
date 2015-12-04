@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Arendi.DataModel
+﻿namespace Arendi.DataModel
 {
     public partial class User
     {

@@ -34,7 +34,6 @@ namespace Arendi
             // Hide the status bar
             StatusBar statusBar = Windows.UI.ViewManagement.StatusBar.GetForCurrentView();
             statusBar.HideAsync();
-
         }
 
         public NavigationHelper NavigationHelper

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
 using Windows.Phone.UI.Input;
 using Windows.UI;
 using Windows.UI.Popups;
@@ -16,9 +18,14 @@ namespace Arendi
             this.InitializeComponent();
         }
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
+
+            // Bind list of companies to company combobox
+            List<string> companies = await Controllers.CompanyController.GetCompanies();
+            companies.Sort();
+            SignupPage_CompanyCombo.ItemsSource = companies;
             HardwareButtons.BackPressed += HardwareButtons_BackPressed;
         }
 
@@ -35,20 +42,34 @@ namespace Arendi
 
         private async void SignupPage_SignupButton_Click(object sender, RoutedEventArgs e)
         {
+            var error_flag = false;
+            var red_color = new SolidColorBrush(Colors.Red);
+            var white_color = new SolidColorBrush(Colors.White);
+
+            // User properties 
+            string name = SignupPage_NameText.Text;
+            string surname = SignupPage_SurnameText.Text;
+            string password = SignupPage_PasswordText.Password;
+            string mail = SignupPage_MailText.Text;
+            string company = string.Empty;
+
             this.IsEnabled = false;
             SignupPage_ProcessRing.IsEnabled = true;
 
             try {
-                var error_flag = false;
-                var red_color = new SolidColorBrush(Colors.Red);
+                // Recolor all the fields
+                SignupPage_NameBorder.Background = 
+                    SignupPage_SurnameBorder.Background = 
+                    SignupPage_PasswordBorder.Background = 
+                    SignupPage_MailBorder.Background = 
+                    SignupPage_CompanyBorder.Background = white_color;
 
-                // User properties 
-                var name = SignupPage_NameText.Text;
-                var surname = SignupPage_SurnameText.Text;
-                var password = SignupPage_PasswordText.Password;
-                var mail = SignupPage_MailText.Text;
-                var company = SignupPage_CompanyText.Text;
+                if (SignupPage_CompanyCombo.SelectedIndex > -1)
+                {
+                    company = ((ComboBoxItem)SignupPage_CompanyCombo.SelectedItem).Content.ToString();
+                }
 
+                ////////// ERROR INDICATORS //////////
                 if (name.Equals(string.Empty))
                 {
                     SignupPage_NameBorder.Background = red_color;
@@ -74,6 +95,7 @@ namespace Arendi
                     SignupPage_CompanyBorder.Background = red_color;
                     error_flag = true;
                 }
+                ////////////////////////////////////////
 
                 if (!error_flag)
                 {
@@ -84,7 +106,8 @@ namespace Arendi
                         await msgbox.ShowAsync();
                     }
                     // New user added successfully
-                    else if (await Controllers.UserController.AddUser(name, password, mail, "w" + company))
+                    else if (await Controllers.UserController.
+                        AddUser(name + " " + surname, password, mail, "w" + company))
                     {
                         App.RoamingSettings.Values["Username"] = name;
                         App.RoamingSettings.Values["Surname"] = surname;

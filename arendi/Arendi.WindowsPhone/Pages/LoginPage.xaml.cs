@@ -55,6 +55,11 @@ namespace Arendi
                 {
                     // Store login information
                     App.RoamingSettings.Values["Loggedin"] = true;
+                    App.RoamingSettings.Values["Username"] = user.Username.Split(' ')[0];
+                    App.RoamingSettings.Values["Surname"] = user.Username.Split(' ')[1];
+                    App.RoamingSettings.Values["Type"] = user.Type[0];
+                    App.RoamingSettings.Values["Company"] = user.Type.Substring(1, user.Type.Length - 1);
+                    App.RoamingSettings.Values["Email"] = user.Email;
 
                     Frame.Navigate(typeof(HubPage));
                 }

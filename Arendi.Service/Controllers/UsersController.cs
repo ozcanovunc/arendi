@@ -55,13 +55,6 @@ namespace Arendi.Service.Controllers
             string new_password, string new_email, string new_type)
         {
             User old_user;
-            User new_user = new User
-            {
-                Username = new_username,
-                Password = new_password,
-                Email = new_email,
-                Type = new_type
-            };
 
             try
             {

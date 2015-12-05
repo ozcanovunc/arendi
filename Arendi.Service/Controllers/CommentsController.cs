@@ -40,6 +40,27 @@ namespace Arendi.Service.Controllers
             }
         }// AddComment
 
+        [Route("get/getcommentid")]
+        [HttpGet]
+        public int GetCommentId(string content, string date, int idea_id, int user_id)
+        {
+            Comment comment;
+
+            try
+            {
+                comment = db.Comments.Where
+                    (c => c.Content == content && 
+                    c.Date == date && 
+                    c.IdeaID == idea_id && 
+                    c.UserID == user_id).First();
+                return comment.ID;
+            }
+            catch
+            {
+                return -1;
+            }
+        }// GetCommentId
+
         [Route("get/deletecommentbyid")]
         [HttpGet]
         public bool DeleteCommentById(int id)
@@ -57,20 +78,13 @@ namespace Arendi.Service.Controllers
             {
                 return false;
             }
-        }
+        }// DeleteCommentById
 
         [Route("get/updatecomment")]
         [HttpGet]
         public bool UpdateComment(int old_id, string content, string date, int idea_id, int user_id)
         {
             Comment old_comment;
-            Comment comment = new Comment
-            {
-                Content = content,
-                Date = date,
-                IdeaID = idea_id,
-                UserID = user_id
-            };
 
             try
             {
@@ -86,6 +100,6 @@ namespace Arendi.Service.Controllers
             {
                 return false;
             }
-        }
+        }// UpdateComment
     }
 }

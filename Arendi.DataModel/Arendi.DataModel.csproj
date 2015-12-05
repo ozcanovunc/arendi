@@ -39,6 +39,7 @@
   <ItemGroup>
     <Compile Include="Comment.cs" />
     <Compile Include="Company.cs" />
+    <Compile Include="HubIdea.cs" />
     <Compile Include="Idea.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

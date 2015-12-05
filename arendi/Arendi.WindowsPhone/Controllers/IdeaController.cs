@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using Arendi.DataModel;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,14 @@ namespace Arendi.Controllers
         {
             BaseAddress = new Uri(App.BaseAddress)
         };
+
+        public static async Task<List<Idea>> GetIdeasByCompany(string company)
+        {
+            string requestString = "getideasbycompany?company=" + company;
+            string requestResult = await IdeaControllerClient.GetStringAsync(requestString);
+            List<Idea> ideas = JsonConvert.DeserializeObject<List<Idea>>(requestResult);
+            return ideas;
+        }
 
         public static async Task<bool> AddIdea(int user_id, string content, string date)
         {

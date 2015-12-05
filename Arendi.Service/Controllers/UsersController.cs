@@ -29,22 +29,20 @@ namespace Arendi.Service.Controllers
             }
         }// GetUserByEmail
 
-        // TODO: NotFound stuff
         [Route("get/getuserbyid")]
         [HttpGet]
-        public IHttpActionResult GetUserById(int id)
+        public User GetUserById(int id)
         {
             User user;
 
             try
             {
                 user = db.Users.Where(u => u.ID == id).First();
-                return Ok(user);
+                return user;
             }
             catch
             {
-                return Ok();
-                //return NotFound();
+                return null;
             }
         }// GetUserById
 

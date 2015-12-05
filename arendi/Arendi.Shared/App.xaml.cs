@@ -17,6 +17,7 @@ using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 using Arendi.Common;
 using Windows.Storage;
+using Arendi.DataModel;
 
 namespace Arendi
 {
@@ -27,6 +28,17 @@ namespace Arendi
 #endif
         public static ApplicationDataContainer RoamingSettings;
         public readonly static string BaseAddress = "http://arendi.somee.com/get/";
+
+        private static ViewModel _viewModel { get; set; }
+        public static ViewModel viewModel
+        {
+            get
+            {
+                if (_viewModel == null)
+                    _viewModel = new ViewModel();
+                return _viewModel;
+            }
+        }
 
         public App()
         {

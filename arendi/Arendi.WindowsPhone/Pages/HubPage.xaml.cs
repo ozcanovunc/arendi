@@ -1,6 +1,8 @@
 ﻿using Arendi.Common;
 using Arendi.Data;
+using Arendi.DataModel;
 using System;
+using System.Collections.Generic;
 using Windows.ApplicationModel.Resources;
 using Windows.Graphics.Display;
 using Windows.Phone.UI.Input;
@@ -21,6 +23,11 @@ namespace Arendi
         public HubPage()
         {
             this.InitializeComponent();
+
+            // Initialize contexts and collections
+            DataContext = App.viewModel;
+            IdeaCollection.Source = App.viewModel.Ideas;
+            BindIdeasToCollection();
 
             // Hub is only supported in Portrait orientation
             DisplayInformation.AutoRotationPreferences = DisplayOrientations.Portrait;
@@ -108,6 +115,31 @@ namespace Arendi
             if ((int)res.Id == 0)
             {
                 Application.Current.Exit();
+            }
+        }
+
+        private async void BindIdeasToCollection()
+        {
+            string company = App.RoamingSettings.Values["Company"].ToString();
+            List<Idea> ideas = await Controllers.IdeaController.GetIdeasByCompany(company);
+            
+            foreach (var idea in ideas)
+            {
+                User user = await Controllers.UserController.GetUserById(idea.UserID);
+
+                // If that idea belongs to our company then show it
+                if (user != null && user.Type == "w" + company)
+                {
+                    HubIdea hub_idea = new HubIdea
+                    {
+                        iUsername = user.Username,
+                        iHeader = "header", // TODO: 
+                        iContent = idea.Content,
+                        id = idea.ID,
+                        uid = user.ID
+                    };
+                    App.viewModel.Ideas.Add(hub_idea);
+                }
             }
         }
     }

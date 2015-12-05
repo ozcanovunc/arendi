@@ -5,7 +5,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-
+using Arendi.DataModel;
 namespace Arendi.Controllers
 {
     public static class CommentController
@@ -14,6 +14,14 @@ namespace Arendi.Controllers
         {
             BaseAddress = new Uri(App.BaseAddress)
         };
+
+        public static async Task<List<Comment>> GetCommentsByIdeaId(int id)
+        {
+            string requestString = "getcommentsbyideaid?id=" + id.ToString();
+            string requestResult = await CommentControllerClient.GetStringAsync(requestString);
+            List<Comment> comments = JsonConvert.DeserializeObject<List<Comment>>(requestResult);
+            return comments;
+        }
 
         public static async Task<bool> AddComment
             (string content, string date, int idea_id, int user_id)

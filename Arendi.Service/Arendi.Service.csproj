@@ -108,6 +108,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CommentsController.cs" />
     <Compile Include="Controllers\CompaniesController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
@@ -128,7 +129,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ArendiModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Comment.cs">
+      <DependentUpon>ArendiModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Company.cs">
+      <DependentUpon>ArendiModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Idea.cs">
       <DependentUpon>ArendiModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\User.cs">

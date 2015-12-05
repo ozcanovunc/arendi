@@ -54,7 +54,7 @@ namespace Arendi.Service.Controllers
             {
                 return false;
             }
-        }// DeleteCompanyByName
+        }// DeleteCompany
 
         [Route("get/addcompany")]
         [HttpGet]

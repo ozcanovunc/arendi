@@ -36,7 +36,7 @@
         <StackPanel Margin="20,350,20,220">
             <Border Name="SignupPage_CompanyBorder" Margin="5,10,5,10" BorderThickness="0" BorderBrush="White" Background="White" CornerRadius="10" Height="50">
                 <!-- Combobox for company -->
-                <ComboBox Name="SignupPage_CompanyCombo" Opacity="0.8" PlaceholderText="Şirket" Background="White" BorderBrush="White" VerticalAlignment="Center" FontFamily="/Fonts/gothic_0.TTF#Century Gothic" Height="50" Margin="5,10,5,10" Style="{StaticResource Custom_ComboBox}"/>
+                <ComboBox x:ConnectionId='2'                                         Name="SignupPage_CompanyCombo" Opacity="0.8" PlaceholderText="Şirket" Background="White" BorderBrush="White" VerticalAlignment="Center" FontFamily="/Fonts/gothic_0.TTF#Century Gothic" Height="50" Margin="5,10,5,10" Style="{StaticResource Custom_ComboBox}"/>
             </Border>
         </StackPanel>
 

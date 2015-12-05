@@ -60,6 +60,7 @@ namespace Arendi
                     App.RoamingSettings.Values["Type"] = user.Type[0];
                     App.RoamingSettings.Values["Company"] = user.Type.Substring(1, user.Type.Length - 1);
                     App.RoamingSettings.Values["Email"] = user.Email;
+                    App.RoamingSettings.Values["UserID"] = user.ID;
 
                     Frame.Navigate(typeof(HubPage));
                 }

@@ -25,7 +25,9 @@ namespace Arendi.Service.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Comment> Comments { get; set; }
         public virtual DbSet<Company> Companies { get; set; }
+        public virtual DbSet<Idea> Ideas { get; set; }
         public virtual DbSet<User> Users { get; set; }
     }
 }

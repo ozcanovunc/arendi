@@ -77,7 +77,7 @@ namespace Arendi.Service.Controllers
             {
                 return false;
             }
-        }// UpdateUser
+        }// UpdateUserByEmail
 
         [Route("get/deleteuserbyemail")]
         [HttpGet]
@@ -96,7 +96,7 @@ namespace Arendi.Service.Controllers
             {
                 return false;
             }
-        }// DeleteUser
+        }// DeleteUserByEmail
 
         [Route("get/adduser")]
         [HttpGet]

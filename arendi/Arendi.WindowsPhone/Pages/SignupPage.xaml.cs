@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Arendi.DataModel;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Diagnostics;
 using Windows.Phone.UI.Input;
 using Windows.UI;
@@ -18,14 +20,9 @@ namespace Arendi
             this.InitializeComponent();
         }
 
-        protected async override void OnNavigatedTo(NavigationEventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
-
-            // Bind list of companies to company combobox
-            List<string> companies = await Controllers.CompanyController.GetCompanies();
-            companies.Sort();
-            SignupPage_CompanyCombo.ItemsSource = companies;
             HardwareButtons.BackPressed += HardwareButtons_BackPressed;
         }
 
@@ -114,10 +111,12 @@ namespace Arendi
                         App.RoamingSettings.Values["Type"] = "w";               
                         App.RoamingSettings.Values["Company"] = company;
                         App.RoamingSettings.Values["Email"] = mail;
+                        App.RoamingSettings.Values["UserID"] 
+                            = (await Controllers.UserController.GetUserByEmail(mail)).ID;
 
                         // Store login information
                         App.RoamingSettings.Values["Loggedin"] = true;
-
+                        
                         Frame.Navigate(typeof(HubPage));
                     }
                     else
@@ -133,11 +132,25 @@ namespace Arendi
                 MessageDialog msgbox = 
                     new MessageDialog("İnternet bağlantınızı kontrol edin!", "Hata");
                 await msgbox.ShowAsync();
+                throw;
             }
             finally
             {
                 SignupPage_ProcessRing.IsEnabled = false;
                 this.IsEnabled = true;
+            }
+        }
+
+        private async void SignupPage_CompanyCombo_Loaded(object sender, RoutedEventArgs e)
+        {
+            List<string> companies = await Controllers.CompanyController.GetCompanies();
+            companies.Sort();
+
+            foreach (var company in companies)
+            {
+                ComboBoxItem item = new ComboBoxItem();
+                item.Content = company;
+                SignupPage_CompanyCombo.Items.Add(item);
             }
         }
     }

@@ -16,6 +16,28 @@ namespace Arendi.Service.Controllers
     {
         private ArendiDBEntities db = new ArendiDBEntities();
 
+        [Route("get/getcommentsbyuserid")]
+        [HttpGet]
+        public List<Comment> GetCommentsByUserId(int id)
+        {
+            var comments = db.Comments;
+            var comments_by_idea_user = new List<Comment>();
+
+            if (comments != null)
+            {
+                foreach (var comment in comments)
+                {
+                    if (comment.UserID == id)
+                        comments_by_idea_user.Add(comment);
+                }
+                return comments_by_idea_user;
+            }
+            else
+            {
+                return null;
+            }
+        }// GetCommentsByUserId
+
         [Route("get/getcommentsbyideaid")]
         [HttpGet]
         public List<Comment> GetCommentsByIdeaId(int id)

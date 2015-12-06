@@ -12,6 +12,8 @@
         <!-- Background image -->
         <Image Source="/Assets/main-background.png" Stretch="Fill" />
 
+        <TextBlock Text="FİKİR DEPOSU" Margin="45,40,20,20" FontFamily="/Fonts/gothic_0.TTF#Century Gothic" FontSize="54" Foreground="White" FontWeight="Bold"/>
+        
         <StackPanel Margin="20,140,20,430">
             <Border Name="SignupPage_NameBorder" Margin="5,10,5,10" BorderThickness="0" BorderBrush="White" Background="White" CornerRadius="10" Height="50">
                 <!-- Textbox for name -->
@@ -47,8 +49,8 @@
             </Border>
             <Button x:ConnectionId='1' Style="{StaticResource Custom_Button}" Name="SignupPage_SignupButton" Content="Kaydol" BorderThickness="2" BorderBrush="White" VerticalAlignment="Center" Width="400" Margin="5,0,0,0" Height="70"                                       FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
         </StackPanel>
-        
-        <ProgressRing Name="SignupPage_ProcessRing" Foreground="Orange" Opacity="0.6"/>
+
+        <ProgressRing Name="SignupPage_ProcessRing" Foreground="#0E3757" Opacity="0.6"/>
     </Grid>
 </Page>
 

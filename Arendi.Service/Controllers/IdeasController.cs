@@ -16,30 +16,26 @@ namespace Arendi.Service.Controllers
     {
         private ArendiDBEntities db = new ArendiDBEntities();
 
-        [Route("get/getideasbycompany")]
+        [Route("get/getideas")]
         [HttpGet]
-        public List<Idea> GetIdeasByCompany(string company)
+        public List<Idea> GetIdeas()
         {
-            var user_controller = new UsersController();
-            List<Idea> ideas_by_company = new List<Idea>();
+            var ideas = db.Ideas;
+            var idea_list = new List<Idea>();
 
-            try
+            if(ideas != null)
             {
-                var ideas = db.Ideas;
-                foreach (var idea in ideas)
+                foreach(var idea in ideas)
                 {
-                    var user_id = idea.UserID;
-                    var user = user_controller.GetUserById(user_id);
-                    if (user != null && user.Type.Equals("w" + company))
-                        ideas_by_company.Add(idea);
+                    idea_list.Add(idea);
                 }
-                return ideas_by_company;
+                return idea_list;
             }
-            catch
+            else
             {
                 return null;
             }
-        }
+        }// GetIdeas
 
         [Route("get/addidea")]
         [HttpGet]

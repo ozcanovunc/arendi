@@ -15,6 +15,14 @@ namespace Arendi.Controllers
             BaseAddress = new Uri(App.BaseAddress)
         };
 
+        public static async Task<List<Comment>> GetCommentsByUserId(int id)
+        {
+            string requestString = "getcommentsbyuserid?id=" + id.ToString();
+            string requestResult = await CommentControllerClient.GetStringAsync(requestString);
+            List<Comment> comments = JsonConvert.DeserializeObject<List<Comment>>(requestResult);
+            return comments;
+        }
+
         public static async Task<List<Comment>> GetCommentsByIdeaId(int id)
         {
             string requestString = "getcommentsbyideaid?id=" + id.ToString();

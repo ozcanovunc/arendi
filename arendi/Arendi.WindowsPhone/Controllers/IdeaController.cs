@@ -16,9 +16,9 @@ namespace Arendi.Controllers
             BaseAddress = new Uri(App.BaseAddress)
         };
 
-        public static async Task<List<Idea>> GetIdeasByCompany(string company)
+        public static async Task<List<Idea>> GetIdeas()
         {
-            string requestString = "getideasbycompany?company=" + company;
+            string requestString = "getideas";
             string requestResult = await IdeaControllerClient.GetStringAsync(requestString);
             List<Idea> ideas = JsonConvert.DeserializeObject<List<Idea>>(requestResult);
             return ideas;

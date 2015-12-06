@@ -1,7 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\ozcanovunc\documents\visual studio 2015\projects\arendi\arendi\arendi.windowsphone\obj\debug\intermediatexaml\arendi.windowsphone.exe" HashGuid="7d0c0e01-a354-41d1-0790-1955e857d90b" />
-    <ReferenceAssembly PathName="c:\users\ozcanovunc\documents\github\arendi\arendi.datamodel\bin\debug\arendi.datamodel.dll" HashGuid="d7759e6f-a5e4-04db-8412-10b82c192d58" />
+    <LocalAssembly PathName="c:\users\ozcanovunc\documents\github\arendi\arendi\arendi.windowsphone\obj\debug\intermediatexaml\arendi.windowsphone.exe" HashGuid="08283ee2-6895-edb2-314d-0a658243e216" />
+    <ReferenceAssembly PathName="c:\users\ozcanovunc\documents\github\arendi\arendi.datamodel\bin\debug\arendi.datamodel.dll" HashGuid="f0cbc2c3-3cd4-1dbe-7155-aa95881b7cc8" />
     <ReferenceAssembly PathName="c:\users\ozcanovunc\documents\github\arendi\packages\newtonsoft.json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\newtonsoft.json.dll" HashGuid="86223907-5808-be51-71b4-c872f8140e29" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

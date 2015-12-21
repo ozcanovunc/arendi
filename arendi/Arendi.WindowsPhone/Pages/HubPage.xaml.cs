@@ -104,8 +104,17 @@ namespace Arendi
                 var res = await msgbox.ShowAsync();
                 if ((int)res.Id == 0)
                 {
+                    // Delete idea
                     await Controllers.IdeaController.DeleteIdeaById(selected_idea_of_mine.id);
-                    // TODO: Delete each comment corresponding idea
+
+                    // Delete each comment corresponding idea
+                    List<Comment> comments = 
+                        await Controllers.CommentController.GetCommentsByIdeaId(selected_idea_of_mine.id);
+                    foreach (var comment in comments)
+                    {
+                        await Controllers.CommentController.DeleteCommentById(comment.ID);
+                    }
+
                     BindIdeasToCollection();
                     selected_idea_of_mine = null;
                 }

@@ -66,7 +66,7 @@
             <DataTemplate x:Key="MyCommentTemplate">
 
                 <Grid Holding="HubPage_MyComments_Grid_Hold" FlyoutBase.AttachedFlyout="{StaticResource HubPage_FlyOut_Menu}">
-                    <Border BorderBrush="White"  BorderThickness="5" CornerRadius="12" Width="350" Margin="10,10,10,10">
+                    <Border BorderBrush="White"  BorderThickness="5" CornerRadius="6" Width="350" Margin="10,10,10,10">
                         <Border.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                 <GradientStop Color="Black" Offset="0"/>
@@ -86,10 +86,10 @@
                     </Border>
                 </Grid>
             </DataTemplate>
-            
+
             <DataTemplate x:Key="IdeaTemplate">
                 <Grid Holding="HubPage_MyIdeas_Grid_Hold" FlyoutBase.AttachedFlyout="{StaticResource HubPage_MyIdeas_FlyOut_Menu}">
-                    <Border BorderBrush="White"  BorderThickness="5" CornerRadius="12" Width="350" Margin="10,10,10,10">
+                    <Border BorderBrush="White"  BorderThickness="5" CornerRadius="6" Width="350" Margin="10,10,10,10">
                         <Border.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                 <GradientStop Color="Black" Offset="0"/>
@@ -165,7 +165,7 @@
                               SelectionChanged="IdeaSelectionChanged_Event"
                               ItemsSource="{Binding Source={StaticResource IdeaCollection}}"
                               Height="500" 
-                              Margin="5,5,5,5" 
+                              Margin="5,0,-30,0" 
                               Width="380"
                               ItemTemplate="{StaticResource IdeaTemplate}" />
                 </DataTemplate>
@@ -179,7 +179,7 @@
                               SelectionChanged="IdeaSelectionChanged_Event"
                               ItemsSource="{Binding Source={StaticResource MyIdeaCollection}}"
                               Height="500" 
-                              Margin="5,5,5,5" 
+                              Margin="5,0,-30,0" 
                               Width="380"
                               ItemTemplate="{StaticResource IdeaTemplate}" />
                 </DataTemplate>
@@ -192,7 +192,7 @@
                               VerticalAlignment="Bottom"
                               ItemsSource="{Binding Source={StaticResource MyCommentCollection}}"
                               Height="500" 
-                              Margin="5,5,5,5" 
+                              Margin="5,0,-25,0" 
                               Width="380"
                               ItemTemplate="{StaticResource MyCommentTemplate}" />
                 </DataTemplate>

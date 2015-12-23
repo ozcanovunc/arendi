@@ -15,14 +15,14 @@
         <TextBlock Text="FİKİR DEPOSU" Margin="45,40,20,20" FontFamily="/Fonts/gothic_0.TTF#Century Gothic" FontSize="54" Foreground="White" FontWeight="Bold"/>
 
         <StackPanel Margin="20,140,20,430">
-            <Border Margin="5,10,5,10" BorderThickness="0" BorderBrush="White" Background="White" CornerRadius="10" Height="50">
+            <Border Margin="5,10,5,10" BorderThickness="0" BorderBrush="White" Background="White" CornerRadius="6" Height="50">
                 <!-- Textbox for email -->
                 <TextBox Name="LoginPage_MailText" MaxLength="30" PlaceholderText="Email" BorderThickness="0" Background="White" BorderBrush="White" VerticalAlignment="Center" Margin="5,10,5,10" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
             </Border>
         </StackPanel>
 
         <StackPanel Margin="20,210,20,230">
-            <Border Margin="5,10,5,10" BorderThickness="0" BorderBrush="White" Background="White" CornerRadius="10" Height="50">
+            <Border Margin="5,10,5,10" BorderThickness="0" BorderBrush="White" Background="White" CornerRadius="6" Height="50">
                 <!-- Textbox for password -->
                 <PasswordBox Name="LoginPage_PasswordText" MaxLength="30" PlaceholderText="Şifre" BorderThickness="0" Background="White" BorderBrush="White" VerticalAlignment="Center" Margin="5,10,5,10" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
             </Border>

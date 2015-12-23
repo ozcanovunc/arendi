@@ -19,7 +19,7 @@
             <CommandBar.SecondaryCommands>
                 <AppBarButton x:ConnectionId='3' Label="Ayarlar"                                    />
                 <AppBarButton x:ConnectionId='4' Label="Yardım"                                />
-                <AppBarButton x:ConnectionId='5' Label="Çıkış"                                />
+                <AppBarButton x:ConnectionId='5' Label="Oturumu kapat"                                />
             </CommandBar.SecondaryCommands>
         </CommandBar>
     </Page.BottomAppBar>
@@ -165,7 +165,7 @@
                                                                            
                               ItemsSource="{Binding Source={StaticResource IdeaCollection}}"
                               Height="500" 
-                              Margin="5,5,5,5" 
+                              Margin="5,0,-30,0" 
                               Width="380"
                               ItemTemplate="{StaticResource IdeaTemplate}" />
                 </DataTemplate>

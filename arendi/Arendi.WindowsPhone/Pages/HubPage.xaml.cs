@@ -272,14 +272,16 @@ namespace Arendi
         private async void AppBarButton_Exit_Click(object sender, RoutedEventArgs e)
         {
             MessageDialog msgbox =
-                new MessageDialog("Uygulamadan çıkmak istediğinizden emin misiniz?", "Çıkış");
+                new MessageDialog("Oturumu kapatmak istediğinize emin misiniz?", "Oturumu kapat");
             msgbox.Commands.Add(new UICommand { Label = "Evet", Id = 0 });
             msgbox.Commands.Add(new UICommand { Label = "Hayır", Id = 1 });
             var res = await msgbox.ShowAsync();
 
             if ((int)res.Id == 0)
             {
-                Application.Current.Exit();
+                // Log out
+                App.RoamingSettings.Values["Loggedin"] = false;
+                App.Current.Exit();
             }
         }
 
@@ -302,7 +304,7 @@ namespace Arendi
             if (selected_comment_of_mine != null)
             {
                 MessageDialog msgbox =
-                    new MessageDialog("Yorumu silmek istediğinizden emin misiniz?", "Yorumu sil");
+                    new MessageDialog("Yorumu silmek istediğinize emin misiniz?", "Yorumu sil");
                 msgbox.Commands.Add(new UICommand { Label = "Evet", Id = 0 });
                 msgbox.Commands.Add(new UICommand { Label = "Hayır", Id = 1 });
                 var res = await msgbox.ShowAsync();

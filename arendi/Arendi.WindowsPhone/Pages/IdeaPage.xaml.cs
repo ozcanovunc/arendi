@@ -48,7 +48,7 @@ namespace Arendi.Pages
         {
             selectedIdea = e.Parameter as HubIdea;
             IdeaPage_IdeaHeader_TextBlock.Text = selectedIdea.iHeader;
-            IdeaPage_IdeaContent_TextBlock.Text = selectedIdea.iContent;
+            IdeaPage_IdeaContent_TextBlock.Text = selectedIdea.iContent + "\n" + selectedIdea.iDate;
             BindCommentsToCollection();
         }
 

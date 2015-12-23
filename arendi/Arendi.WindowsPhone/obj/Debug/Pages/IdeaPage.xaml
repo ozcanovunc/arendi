@@ -80,7 +80,7 @@
                       HorizontalAlignment="Center" 
                       VerticalAlignment="Bottom"
                       ItemsSource="{Binding Source={StaticResource CommentCollection}}"
-                      Margin="0,10,0,85" 
+                      Margin="-40,10,-40,85" 
                       ItemTemplate="{StaticResource CommentTemplate}" />
 
         </Grid>

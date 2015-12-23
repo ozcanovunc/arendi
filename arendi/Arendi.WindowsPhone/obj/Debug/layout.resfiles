@@ -7,6 +7,7 @@ Assets\background02.jpg
 Assets\HubBackground.theme-light.png
 Assets\Logo.scale-240.png
 Assets\main-background.png
+Assets\profile_picture.jpg
 Assets\SmallLogo.scale-240.png
 Assets\SplashScreen.scale-240.png
 Assets\Square71x71Logo.scale-240.png
@@ -19,9 +20,8 @@ Pages\EditCommentPage.xbf
 Pages\EditIdeaPage.xbf
 Pages\HubPage.xbf
 Pages\IdeaPage.xbf
-Pages\ItemPage.xbf
 Pages\LoginPage.xbf
 Pages\MainPage.xbf
-Pages\SectionPage.xbf
+Pages\SettingsPage.xbf
 Pages\SignupPage.xbf
 Fonts\gothic_0.TTF

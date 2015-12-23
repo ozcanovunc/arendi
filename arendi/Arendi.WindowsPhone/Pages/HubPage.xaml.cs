@@ -116,6 +116,7 @@ namespace Arendi
                     }
 
                     BindIdeasToCollection();
+                    BindMyCommentsToCollection();
                     selected_idea_of_mine = null;
                 }
             }
@@ -137,15 +138,6 @@ namespace Arendi
             FrameworkElement senderElement = sender as FrameworkElement;
             FlyoutBase flyoutBase = FlyoutBase.GetAttachedFlyout(senderElement);
             flyoutBase.ShowAt(senderElement);
-        }
-
-        private void ItemView_ItemClick(object sender, ItemClickEventArgs e)
-        {
-            var itemId = ((SampleDataItem)e.ClickedItem).UniqueId;
-            if (!Frame.Navigate(typeof(ItemPage), itemId))
-            {
-                throw new Exception(this.resourceLoader.GetString("NavigationFailedExceptionMessage"));
-            }
         }
 
         #region NavigationHelper registration
@@ -196,6 +188,7 @@ namespace Arendi
                         iUsername = user.Username,
                         iHeader = idea.Content.Split(new string[] { "///" }, StringSplitOptions.None)[0],
                         iContent = idea.Content.Split(new string[] { "///" }, StringSplitOptions.None)[1],
+                        iDate = idea.Date,
                         id = idea.ID,
                         uid = user.ID
                     };
@@ -261,7 +254,7 @@ namespace Arendi
 
         private void AppBarButton_Settings_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(SettingsPage));
         }
 
         private void AppBarButton_Help_Click(object sender, RoutedEventArgs e)

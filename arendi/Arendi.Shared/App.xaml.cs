@@ -18,6 +18,7 @@ using Windows.UI.Xaml.Navigation;
 using Arendi.Common;
 using Windows.Storage;
 using Arendi.DataModel;
+using Arendi.Pages;
 
 namespace Arendi
 {
@@ -45,6 +46,16 @@ namespace Arendi
             this.InitializeComponent();
             this.Suspending += this.OnSuspending;
             RoamingSettings = ApplicationData.Current.RoamingSettings;
+        }
+
+        protected override void OnActivated(IActivatedEventArgs args)
+        {
+            var root = Window.Current.Content as Frame;
+            var page = root.Content as SettingsPage;
+            if (page != null && args is FileOpenPickerContinuationEventArgs)
+            {
+                page.ContinueFileOpenPicker(args as FileOpenPickerContinuationEventArgs);
+            }
         }
 
         protected async override void OnLaunched(LaunchActivatedEventArgs e)

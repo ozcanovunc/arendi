@@ -97,8 +97,6 @@ C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\HubPage.xbf
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\LoginPage.xbf
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\MainPage.xbf
-C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\SectionPage.xbf
-C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\ItemPage.xbf
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\SignupPage.xbf
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Arendi.WindowsPhone.xr.xml
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Arendi.WindowsPhone.exe
@@ -121,10 +119,6 @@ C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\LoginPage.g.cs
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\MainPage.g.i.cs
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\MainPage.g.cs
-C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\SectionPage.g.i.cs
-C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\SectionPage.g.cs
-C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\ItemPage.g.i.cs
-C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\ItemPage.g.cs
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\SignupPage.g.i.cs
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\SignupPage.g.cs
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\XamlTypeInfo.g.cs
@@ -133,16 +127,12 @@ C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\HubPage.xaml
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\LoginPage.xaml
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\MainPage.xaml
-C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\SectionPage.xaml
-C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\ItemPage.xaml
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\SignupPage.xaml
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\App.xbf
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\AddIdeaPage.xbf
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\HubPage.xbf
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\LoginPage.xbf
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\MainPage.xbf
-C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\SectionPage.xbf
-C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\ItemPage.xbf
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\SignupPage.xbf
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\XamlSaveStateFile.xml
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Arendi.WindowsPhone.exe
@@ -175,3 +165,8 @@ C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\EditIdeaPage.xaml
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\EditIdeaPage.xbf
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\EditIdeaPage.xbf
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\SettingsPage.g.i.cs
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\SettingsPage.g.cs
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\SettingsPage.xaml
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\SettingsPage.xbf
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\SettingsPage.xbf

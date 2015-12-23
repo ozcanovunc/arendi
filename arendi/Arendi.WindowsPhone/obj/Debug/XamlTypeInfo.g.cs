@@ -124,7 +124,7 @@ namespace Arendi.Arendi_WindowsPhone_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[17];
+            _typeNameTable = new string[16];
             _typeNameTable[0] = "Arendi.Pages.AddIdeaPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -139,11 +139,10 @@ namespace Arendi.Arendi_WindowsPhone_XamlTypeInfo
             _typeNameTable[11] = "Arendi.Pages.IdeaPage";
             _typeNameTable[12] = "Arendi.LoginPage";
             _typeNameTable[13] = "Arendi.MainPage";
-            _typeNameTable[14] = "Arendi.SectionPage";
-            _typeNameTable[15] = "Arendi.ItemPage";
-            _typeNameTable[16] = "Arendi.SignupPage";
+            _typeNameTable[14] = "Arendi.Pages.SettingsPage";
+            _typeNameTable[15] = "Arendi.SignupPage";
 
-            _typeTable = new global::System.Type[17];
+            _typeTable = new global::System.Type[16];
             _typeTable[0] = typeof(global::Arendi.Pages.AddIdeaPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -158,9 +157,8 @@ namespace Arendi.Arendi_WindowsPhone_XamlTypeInfo
             _typeTable[11] = typeof(global::Arendi.Pages.IdeaPage);
             _typeTable[12] = typeof(global::Arendi.LoginPage);
             _typeTable[13] = typeof(global::Arendi.MainPage);
-            _typeTable[14] = typeof(global::Arendi.SectionPage);
-            _typeTable[15] = typeof(global::Arendi.ItemPage);
-            _typeTable[16] = typeof(global::Arendi.SignupPage);
+            _typeTable[14] = typeof(global::Arendi.Pages.SettingsPage);
+            _typeTable[15] = typeof(global::Arendi.SignupPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -203,9 +201,8 @@ namespace Arendi.Arendi_WindowsPhone_XamlTypeInfo
         private object Activate_11_IdeaPage() { return new global::Arendi.Pages.IdeaPage(); }
         private object Activate_12_LoginPage() { return new global::Arendi.LoginPage(); }
         private object Activate_13_MainPage() { return new global::Arendi.MainPage(); }
-        private object Activate_14_SectionPage() { return new global::Arendi.SectionPage(); }
-        private object Activate_15_ItemPage() { return new global::Arendi.ItemPage(); }
-        private object Activate_16_SignupPage() { return new global::Arendi.SignupPage(); }
+        private object Activate_14_SettingsPage() { return new global::Arendi.Pages.SettingsPage(); }
+        private object Activate_15_SignupPage() { return new global::Arendi.SignupPage(); }
         private void MapAdd_8_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -310,27 +307,16 @@ namespace Arendi.Arendi_WindowsPhone_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 14:   //  Arendi.SectionPage
+            case 14:   //  Arendi.Pages.SettingsPage
                 userType = new global::Arendi.Arendi_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_SectionPage;
-                userType.AddMemberName("NavigationHelper");
-                userType.AddMemberName("DefaultViewModel");
+                userType.Activator = Activate_14_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  Arendi.ItemPage
+            case 15:   //  Arendi.SignupPage
                 userType = new global::Arendi.Arendi_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_15_ItemPage;
-                userType.AddMemberName("NavigationHelper");
-                userType.AddMemberName("DefaultViewModel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 16:   //  Arendi.SignupPage
-                userType = new global::Arendi.Arendi_WindowsPhone_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_SignupPage;
+                userType.Activator = Activate_15_SignupPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -347,26 +333,6 @@ namespace Arendi.Arendi_WindowsPhone_XamlTypeInfo
         private object get_1_HubPage_DefaultViewModel(object instance)
         {
             var that = (global::Arendi.HubPage)instance;
-            return that.DefaultViewModel;
-        }
-        private object get_2_SectionPage_NavigationHelper(object instance)
-        {
-            var that = (global::Arendi.SectionPage)instance;
-            return that.NavigationHelper;
-        }
-        private object get_3_SectionPage_DefaultViewModel(object instance)
-        {
-            var that = (global::Arendi.SectionPage)instance;
-            return that.DefaultViewModel;
-        }
-        private object get_4_ItemPage_NavigationHelper(object instance)
-        {
-            var that = (global::Arendi.ItemPage)instance;
-            return that.NavigationHelper;
-        }
-        private object get_5_ItemPage_DefaultViewModel(object instance)
-        {
-            var that = (global::Arendi.ItemPage)instance;
             return that.DefaultViewModel;
         }
 
@@ -387,30 +353,6 @@ namespace Arendi.Arendi_WindowsPhone_XamlTypeInfo
                 userType = (global::Arendi.Arendi_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Arendi.HubPage");
                 xamlMember = new global::Arendi.Arendi_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Arendi.Common.ObservableDictionary");
                 xamlMember.Getter = get_1_HubPage_DefaultViewModel;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Arendi.SectionPage.NavigationHelper":
-                userType = (global::Arendi.Arendi_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Arendi.SectionPage");
-                xamlMember = new global::Arendi.Arendi_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Arendi.Common.NavigationHelper");
-                xamlMember.Getter = get_2_SectionPage_NavigationHelper;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Arendi.SectionPage.DefaultViewModel":
-                userType = (global::Arendi.Arendi_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Arendi.SectionPage");
-                xamlMember = new global::Arendi.Arendi_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Arendi.Common.ObservableDictionary");
-                xamlMember.Getter = get_3_SectionPage_DefaultViewModel;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Arendi.ItemPage.NavigationHelper":
-                userType = (global::Arendi.Arendi_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Arendi.ItemPage");
-                xamlMember = new global::Arendi.Arendi_WindowsPhone_XamlTypeInfo.XamlMember(this, "NavigationHelper", "Arendi.Common.NavigationHelper");
-                xamlMember.Getter = get_4_ItemPage_NavigationHelper;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Arendi.ItemPage.DefaultViewModel":
-                userType = (global::Arendi.Arendi_WindowsPhone_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Arendi.ItemPage");
-                xamlMember = new global::Arendi.Arendi_WindowsPhone_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "Arendi.Common.ObservableDictionary");
-                xamlMember.Getter = get_5_ItemPage_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             }

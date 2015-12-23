@@ -11,6 +11,7 @@ namespace Arendi.DataModel
         public string iUsername { get; set; }
         public string iHeader { get; set; }
         public string iContent { get; set; }
+        public string iDate { get; set; }
         public int id { get; set; }
         public int uid { get; set; }
     }

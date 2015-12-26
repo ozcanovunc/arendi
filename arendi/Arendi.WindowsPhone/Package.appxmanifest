@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="c4ad8e22-c121-4655-8d82-bfd88834f055" Publisher="CN=ozcanovunc" Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="c4ad8e22-c121-4655-8d82-bfd88834f055" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="51187ozcanovunc.FikirDeposu" Publisher="CN=A6FB5F94-FCBB-4A42-9431-3CB505202850" Version="1.1.0.5" />
+  <mp:PhoneIdentity PhoneProductId="0ccde3f9-2080-45a2-b3f4-6432044efe6f" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>Arendi.WindowsPhone</DisplayName>
+    <DisplayName>Fikir Deposu</DisplayName>
     <PublisherDisplayName>ozcanovunc</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -19,7 +19,6 @@
       <m3:VisualElements DisplayName="Arendi" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="Arendi.WindowsPhone" ForegroundText="light" BackgroundColor="transparent">
         <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png">
         </m3:DefaultTile>
-        <m3:SplashScreen Image="Assets\SplashScreen.png" />
       </m3:VisualElements>
     </Application>
   </Applications>

@@ -170,3 +170,8 @@ C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\SettingsPage.xaml
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\SettingsPage.xbf
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\SettingsPage.xbf
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\HelpPage.g.i.cs
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\HelpPage.g.cs
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\HelpPage.xaml
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\obj\Debug\Pages\HelpPage.xbf
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\HelpPage.xbf

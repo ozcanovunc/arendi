@@ -96,6 +96,9 @@
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\EditIdeaPage.xbf">
       <PackagePath>Pages\EditIdeaPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\HelpPage.xbf">
+      <PackagePath>Pages\HelpPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.WindowsPhone\bin\Debug\Pages\HubPage.xbf">
       <PackagePath>Pages\HubPage.xbf</PackagePath>
     </AppxPackagedFile>

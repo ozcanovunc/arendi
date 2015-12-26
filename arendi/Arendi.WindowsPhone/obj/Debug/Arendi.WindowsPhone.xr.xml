@@ -207,10 +207,10 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="Child" />
+      <RootProperty Name="MinHeight" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="MinHeight" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Name" />
     </RootType>
@@ -293,13 +293,14 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontFamily" />
-      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="TextAlignment" />
       <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Inlines" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="MaxLines" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="FontStyle" />
-      <RootProperty Name="TextAlignment" />
       <RootProperty Name="Name" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.LinearGradientBrush">
@@ -347,6 +348,11 @@
     </RootType>
     <RootType FullName="Arendi.Pages.EditCommentPage" />
     <RootType FullName="Arendi.Pages.EditIdeaPage" />
+    <RootType FullName="Windows.UI.Xaml.Documents.Run">
+      <RootProperty Name="Text" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
+    <RootType FullName="Arendi.Pages.HelpPage" />
     <RootType FullName="Windows.UI.Xaml.ResourceDictionary">
       <RootProperty Name="ThemeDictionaries" />
     </RootType>

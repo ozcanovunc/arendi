@@ -18,6 +18,7 @@ Arendi.WindowsPhone.xr.xml
 Pages\AddIdeaPage.xbf
 Pages\EditCommentPage.xbf
 Pages\EditIdeaPage.xbf
+Pages\HelpPage.xbf
 Pages\HubPage.xbf
 Pages\IdeaPage.xbf
 Pages\LoginPage.xbf

@@ -19,7 +19,8 @@
             <CommandBar.SecondaryCommands>
                 <AppBarButton x:ConnectionId='3' Label="Ayarlar"                                    />
                 <AppBarButton x:ConnectionId='4' Label="Yardım"                                />
-                <AppBarButton x:ConnectionId='5' Label="Oturumu kapat"                                />
+                <AppBarButton x:ConnectionId='5' Label="Oy ver"                                />
+                <AppBarButton x:ConnectionId='6' Label="Oturumu kapat"                                />
             </CommandBar.SecondaryCommands>
         </CommandBar>
     </Page.BottomAppBar>
@@ -42,17 +43,17 @@
             <CollectionViewSource x:Name="MyCommentCollection"/>
             
             <MenuFlyout x:Name="HubPage_FlyOut_Menu">
-                <MenuFlyoutItem x:ConnectionId='10' Text="Sil"                              />
-                <MenuFlyoutItem x:ConnectionId='11' Text="Düzenle"                            />
+                <MenuFlyoutItem x:ConnectionId='11' Text="Sil"                              />
+                <MenuFlyoutItem x:ConnectionId='12' Text="Düzenle"                            />
             </MenuFlyout>
             
             <MenuFlyout x:Name="HubPage_MyIdeas_FlyOut_Menu">
-                <MenuFlyoutItem x:ConnectionId='8' Text="Sil"                                      />
-                <MenuFlyoutItem x:ConnectionId='9' Text="Düzenle"                                    />
+                <MenuFlyoutItem x:ConnectionId='9' Text="Sil"                                      />
+                <MenuFlyoutItem x:ConnectionId='10' Text="Düzenle"                                    />
             </MenuFlyout>
 
             <DataTemplate x:Key="MyCommentTemplate">
-                <Grid x:ConnectionId='7'                                        FlyoutBase.AttachedFlyout="{StaticResource HubPage_FlyOut_Menu}">
+                <Grid x:ConnectionId='8'                                        FlyoutBase.AttachedFlyout="{StaticResource HubPage_FlyOut_Menu}">
                     <Border BorderBrush="White"  BorderThickness="5" CornerRadius="6" Width="350" Margin="10,10,10,10">
                         <Border.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -75,7 +76,7 @@
             </DataTemplate>
 
             <DataTemplate x:Key="IdeaTemplate">
-                <Grid x:ConnectionId='6'                                     FlyoutBase.AttachedFlyout="{StaticResource HubPage_MyIdeas_FlyOut_Menu}">
+                <Grid x:ConnectionId='7'                                     FlyoutBase.AttachedFlyout="{StaticResource HubPage_MyIdeas_FlyOut_Menu}">
                     <Border BorderBrush="White"  BorderThickness="5" CornerRadius="6" Width="350" Margin="10,10,10,10">
                         <Border.Background>
                             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -113,7 +114,7 @@
 
             <HubSection Margin="0,5,0,0" Header="ana sayfa" DataContext="{Binding Groups}" Style="{StaticResource Custom_HubSection}">
                 <DataTemplate>
-                    <ListView x:ConnectionId='13' HorizontalAlignment="Center" 
+                    <ListView x:ConnectionId='14' HorizontalAlignment="Center" 
                               VerticalAlignment="Bottom"
                                                                            
                               ItemsSource="{Binding Source={StaticResource IdeaCollection}}"
@@ -127,7 +128,7 @@
             <HubSection Margin="0,5,0,0"  Header="fikirlerim" Width="Auto"
                          DataContext="{Binding Groups[0]}" Style="{StaticResource Custom_HubSection}">
                 <DataTemplate>
-                    <ListView x:ConnectionId='12' HorizontalAlignment="Center" 
+                    <ListView x:ConnectionId='13' HorizontalAlignment="Center" 
                               VerticalAlignment="Bottom"
                                                                            
                               ItemsSource="{Binding Source={StaticResource MyIdeaCollection}}"

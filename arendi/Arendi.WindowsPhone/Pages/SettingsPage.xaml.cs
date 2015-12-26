@@ -28,9 +28,6 @@ using Windows.UI.Xaml.Navigation;
 
 namespace Arendi.Pages
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class SettingsPage : Page
     {
         public SettingsPage()
@@ -67,6 +64,7 @@ namespace Arendi.Pages
             string surname = SettingsPage_SurnameText.Text;
             string password = SettingsPage_PasswordText.Password;
             string mail = SettingsPage_MailText.Text;
+            string company = App.RoamingSettings.Values["Company"].ToString();
 
             this.IsEnabled = false;
             SettingsPage_ProcessRing.IsEnabled = true;
@@ -115,7 +113,7 @@ namespace Arendi.Pages
                         name + " " + surname, 
                         password, 
                         mail, 
-                        "w"))
+                        "w" + company))
                     {
                         App.RoamingSettings.Values["Username"] = name;
                         App.RoamingSettings.Values["Surname"] = surname;

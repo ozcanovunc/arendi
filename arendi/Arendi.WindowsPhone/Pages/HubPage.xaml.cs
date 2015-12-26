@@ -67,6 +67,13 @@ namespace Arendi
             this.DefaultViewModel["Groups"] = sampleDataGroups;
         }
 
+        private async void AppBarButton_Vote_Click(object sender, RoutedEventArgs e)
+        {
+            var app_id = Windows.ApplicationModel.Store.CurrentApp.AppId;
+            var uri = new Uri(string.Format("ms-windows-store:reviewapp?appid={0}", app_id));
+            await Windows.System.Launcher.LaunchUriAsync(uri);
+        }
+
         private void NavigationHelper_SaveState(object sender, SaveStateEventArgs e)
         {
             // TODO: Save the unique state of the page here.
@@ -259,7 +266,7 @@ namespace Arendi
 
         private void AppBarButton_Help_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(HelpPage));
         }
 
         private async void AppBarButton_Exit_Click(object sender, RoutedEventArgs e)

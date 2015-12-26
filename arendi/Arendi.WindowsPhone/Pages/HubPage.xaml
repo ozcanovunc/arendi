@@ -19,6 +19,7 @@
             <CommandBar.SecondaryCommands>
                 <AppBarButton Label="Ayarlar" Click="AppBarButton_Settings_Click"/>
                 <AppBarButton Label="Yardım" Click="AppBarButton_Help_Click"/>
+                <AppBarButton Label="Oy ver" Click="AppBarButton_Vote_Click"/>
                 <AppBarButton Label="Oturumu kapat" Click="AppBarButton_Exit_Click"/>
             </CommandBar.SecondaryCommands>
         </CommandBar>

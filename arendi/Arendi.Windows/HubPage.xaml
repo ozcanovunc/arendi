@@ -11,143 +11,101 @@
     mc:Ignorable="d">
 
     <Page.Resources>
-        <!-- Grid-appropriate 310 by 260 pixel item template as seen in section 4 -->
-        <DataTemplate x:Key="Standard310x260ItemTemplate">
-            <Grid Height="250" Width="310" Margin="5,10,5,10">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Border Background="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}" Height="150">
-                    <Image Source="{Binding ImagePath}" Stretch="UniformToFill" AutomationProperties.Name="{Binding Title}"/>
+        <CollectionViewSource x:Name="IdeaCollection"/>
+        <CollectionViewSource x:Name="UserCollection"/>
+
+        <DataTemplate x:Key="IdeaTemplate">
+            <Grid>
+                <Border BorderBrush="White"  BorderThickness="5" CornerRadius="6" Width="880" Margin="10,10,10,10">
+                    <Border.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="#FF113D5C" Offset="0.483"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Grid>
+                        <!-- Username: iUsername -->
+                        <TextBlock FontFamily="/Fonts/gothic_0.TTF#Century Gothic" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Path=iUsername}" Height="{Binding}" FontSize="20" Foreground="White" Margin="17,10,30,5"/>
+                        <!-- Ruler -->
+                        <Border Margin="17,40,30,5" Height="2" VerticalAlignment="Top" BorderBrush="White" BorderThickness="2" />
+                        <!-- Idea header: iHeader -->
+                        <TextBlock FontFamily="/Fonts/gothic_0.TTF#Century Gothic" MaxLines="1" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Path=iHeader}" Height="{Binding}" FontSize="20" FontWeight="Bold" FontStyle="Italic" Foreground="White" Margin="17,50,30,5"/>
+                        <!-- Idea content: iContent -->
+                        <TextBlock FontFamily="/Fonts/gothic_0.TTF#Century Gothic" MaxLines="2" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Path=iContent}" Height="{Binding}" FontSize="20" Foreground="White" Margin="17,80,30,10"/>
+                        <!--<Button Content="Beğen" FontFamily="/Fonts/gothic_0.TTF#Century Gothic" Style="{StaticResource Custom_Button}" Margin="17,115,0,0" Width="145"/>-->
+                        <!--<Button Content="Yorum" FontFamily="/Fonts/gothic_0.TTF#Century Gothic" Style="{StaticResource Custom_Button}" Margin="184,115,12,0" Width="145"/>-->
+                    </Grid>
                 </Border>
-                <StackPanel Grid.Row="1" Margin="0,10,0,0">
-                    <TextBlock Text="{Binding Title}" Style="{StaticResource TitleTextBlockStyle}" TextWrapping="NoWrap"/>
-                    <TextBlock Text="{Binding Description}" Style="{StaticResource BodyTextBlockStyle}" MaxHeight="60" />
-                </StackPanel>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="UserTemplate">
+            <Grid>
+                <Border BorderBrush="White"  BorderThickness="5" CornerRadius="6" Width="400" Margin="10,10,10,10">
+                    <Border.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="Black" Offset="0"/>
+                            <GradientStop Color="#FF113D5C" Offset="0.483"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Grid>
+                        <TextBlock FontFamily="/Fonts/gothic_0.TTF#Century Gothic" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Path=Username}" Height="{Binding}" FontSize="20" Foreground="White" Margin="17,10,30,5"/>
+                        <Border Margin="17,40,30,5" Height="2" VerticalAlignment="Top" BorderBrush="White" BorderThickness="2" />
+                        <TextBlock FontFamily="/Fonts/gothic_0.TTF#Century Gothic" MaxLines="1" VerticalAlignment="Top" TextWrapping="Wrap" Text="{Binding Path=Email}" Height="{Binding}" FontSize="20" FontWeight="Bold" FontStyle="Italic" Foreground="White" Margin="17,50,30,5"/>
+                    </Grid>
+                </Border>
             </Grid>
         </DataTemplate>
     </Page.Resources>
 
-    <!--
-    This grid acts as a root panel for the page.
-  -->
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.ChildrenTransitions>
-            <TransitionCollection>
-                <EntranceThemeTransition/>
-            </TransitionCollection>
-        </Grid.ChildrenTransitions>
-        <Hub SectionHeaderClick="Hub_SectionHeaderClick">
-            <Hub.Header>
-                <!-- Back button and page title -->
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="80"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Button  x:Name="backButton" Style="{StaticResource NavigationBackButtonNormalStyle}"
-                        Margin="0,0,39,0" 
-                        VerticalAlignment="Top"
-                        Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
-                        AutomationProperties.Name="Back"
-                        AutomationProperties.AutomationId="BackButton"
-                        AutomationProperties.ItemType="Navigation Button"/>
-                    <TextBlock x:Name="pageTitle" x:Uid="Header" Text="application name" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
-                        VerticalAlignment="Top" IsHitTestVisible="false" TextWrapping="NoWrap" />
-                </Grid>
-            </Hub.Header>
-            <HubSection Width="780" Margin="0,0,80,0">
+    <Grid>
+        <Image Source="Assets/main-background.png" Stretch="UniformToFill" />
+        <TextBlock FontFamily="/Fonts/gothic_0.TTF#Century Gothic" Text="Fikir Deposu" VerticalAlignment="Top" IsHitTestVisible="false" TextWrapping="NoWrap" FontSize="60" Margin="108,57,903,0"/>
+        <TextBlock FontFamily="/Fonts/gothic_0.TTF#Century Gothic" Text="Yönetim" VerticalAlignment="Top" IsHitTestVisible="false" TextWrapping="NoWrap" Margin="188,136,1013,0" FontSize="40"/>
+
+        <TextBlock FontFamily="/Fonts/gothic_0.TTF#Century Gothic" Name="Text_Name" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="false" TextWrapping="Wrap" Margin="-38,100,1057,250" FontSize="30" Height="45" Width="347"/>
+        <TextBlock FontFamily="/Fonts/gothic_0.TTF#Century Gothic" Name="Text_Surname" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="false" TextWrapping="Wrap" Margin="-38,150,1057,219" FontSize="30" Height="45" Width="347"/>
+
+        <Hub Margin="550,0,0,0">
+            <!-- IDEAS -->
+            <HubSection Name="HubSection1" Width="1020" Margin="0,5,0,0" Header="  ana sayfa" DataContext="{Binding Groups}" Style="{StaticResource Custom_HubSection}">
                 <HubSection.Background>
-                    <ImageBrush ImageSource="Assets/MediumGray.png" Stretch="UniformToFill" />
+                    <ImageBrush ImageSource="Assets/background02.jpg" Stretch="UniformToFill" />
                 </HubSection.Background>
-            </HubSection>
-            <HubSection Width="500" x:Uid="Section1Header" Header="Section 1">
                 <DataTemplate>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="*" />
-                        </Grid.RowDefinitions>
-                        <Image Source="Assets/MediumGray.png" Stretch="Fill" Width="420" Height="280"/>
-                        <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" Grid.Row="1" Margin="0,10,0,0" TextWrapping="Wrap"  
-                                   x:Uid="Section1Subtitle" Text="Lorem ipsum dolor sit nonumy sed consectetuer ising elit, sed diam"/>
-                        <TextBlock Style="{StaticResource TitleTextBlockStyle}" Grid.Row="2" Margin="0,10,0,0" 
-                                   x:Uid="DescriptionHeader" Text="Description text:"/>
-                        <TextBlock Style="{StaticResource BodyTextBlockStyle}" Grid.Row="3"
-                                   x:Uid="Section1DescriptionText" Text="Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. "/>
-                    </Grid>
+                    <ListView     HorizontalAlignment="Center" 
+                                  VerticalAlignment="Bottom"
+                                  ItemsSource="{Binding Source={StaticResource IdeaCollection}}"
+                                  SelectionChanged="IdeaSelectionChanged_Event"
+                                  Height="600" 
+                                  Margin="5,0,-30,0" 
+                                  Width="930"
+                                  ItemTemplate="{StaticResource IdeaTemplate}" />
                 </DataTemplate>
             </HubSection>
-            <HubSection Width="520" x:Uid="Section2Header" Header="Section 2">
+
+            <!-- WORKERS -->
+            <HubSection Name="HubSection2"  Width="520" Margin="0,5,0,0" Header="  çalışanlar" DataContext="{Binding Groups}" Style="{StaticResource Custom_HubSection}">
+                <HubSection.Background>
+                    <ImageBrush ImageSource="Assets/main-background.png" Stretch="UniformToFill" />
+                </HubSection.Background>
                 <DataTemplate>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="*" />
-                        </Grid.RowDefinitions>
-                        <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="0,0,0,10"
-                                   x:Uid="ItemTitle" Text="Item Title" />
-                        <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" Grid.Row="1"
-                                   x:Uid="Section2UnderTitle" Text="Quisque in porta lorem dolor amet sed consectetuer ising elit, sed diam non my nibh uis mod wisi quip."/>
-                        <TextBlock Style="{StaticResource SubtitleTextBlockStyle}" Grid.Row="2" Margin="0,20,0,0"
-                                   x:Uid="ItemSubTitle" Text="Item Sub Title"/>
-                        <TextBlock Style="{StaticResource BodyTextBlockStyle}" Grid.Row="3" 
-                                   x:Uid="LongText" Text="Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper."/>
-                    </Grid>
-                </DataTemplate>
-            </HubSection>
-            <HubSection IsHeaderInteractive="True" DataContext="{Binding Section3Items}" d:DataContext="{Binding Groups[3], Source={d:DesignData Source=../Arendi.Shared/DataModel/SampleData.json, Type=data:SampleDataSource}}"
-                        x:Uid="Section3Header" Header="Section 3" Padding="40,40,40,32">
-                <DataTemplate>
-                    <GridView
-                        x:Name="itemGridView"
-                        ItemsSource="{Binding Items}"
-                        Margin="-9,-14,0,0"
-                        AutomationProperties.AutomationId="ItemGridView"
-                        AutomationProperties.Name="Items In Group"
-                        ItemTemplate="{StaticResource Standard310x260ItemTemplate}"
-                        SelectionMode="None"
-                        IsSwipeEnabled="false"
-                        IsItemClickEnabled="True"
-                        ItemClick="ItemView_ItemClick">
-                    </GridView>
-                </DataTemplate>
-            </HubSection>
-            <HubSection x:Uid="Section4Header" Header="Section 4">
-                <DataTemplate>
-                    <!-- width of 400 -->
-                    <StackPanel Orientation="Vertical">
-                        <Grid>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="130"/>
-                                <ColumnDefinition Width="5"/>
-                                <ColumnDefinition Width="130"/>
-                                <ColumnDefinition Width="5"/>
-                                <ColumnDefinition Width="130"/>
-                            </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="270"/>
-                                <RowDefinition Height="95"/>
-                                <RowDefinition Height="Auto" />
-                                <RowDefinition Height="*" />
-                            </Grid.RowDefinitions>
-                            <Image Source="Assets/MediumGray.png" Grid.ColumnSpan="5" Margin="0,0,0,10" Stretch="Fill" />
-                            <Image Source="Assets/MediumGray.png" Grid.Row="1" Stretch="Fill"/>
-                            <Image Source="Assets/MediumGray.png" Grid.Row="1" Grid.Column="2" Stretch="Fill"/>
-                            <Image Source="Assets/MediumGray.png" Grid.Row="1" Grid.Column="4" Stretch="Fill"/>
-                            <TextBlock Style="{StaticResource TitleTextBlockStyle}" Grid.Row="2" Grid.ColumnSpan="5"  Margin="0,15,0,0"
-                                       x:Uid="DescriptionHeader" Text="Description text:"/>
-                            <TextBlock Style="{StaticResource BodyTextBlockStyle}" Grid.Row="3" Grid.ColumnSpan="5"
-                                       x:Uid="LongText" Text="Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper. Lorem ipsum dolor sit amet, consectetuer ising elit, sed diam nonummy nibh uismod tincidunt ut laoreet suscipit lobortis ni ut wisi quipexerci quis consequat minim veniam, quis nostrud exerci tation ullam corper."/>
-                        </Grid>
-                    </StackPanel>
+                    <ListView     HorizontalAlignment="Center" 
+                                  VerticalAlignment="Bottom"
+                                  ItemsSource="{Binding Source={StaticResource UserCollection}}"
+                                  SelectionChanged="UserSelectionChanged_Event"
+                                  Height="600" 
+                                  Margin="5,0,-30,0" 
+                                  Width="450"
+                                  ItemTemplate="{StaticResource UserTemplate}" />
                 </DataTemplate>
             </HubSection>
         </Hub>
+
+        <ProgressRing Name="HubPage_ProcessRing" Foreground="#0E3757" Opacity="0.6" Width="300" Height="300"/>
+        <Button x:Name="DeleteIdea_Button" Content="Fikri sil" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="130,650,0,0" Width="300" Click="DeleteIdea_Button_Click"/>
+        <Button x:Name="DeleteWorker_Button" Content="Çalışanı sil" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="130,600,0,0" Width="300" Click="DeleteWorker_Button_Click"/>
+        <Button x:Name="Refresh_Button" Content="Yenile" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="130,550,0,0" Width="300" Click="Refresh_Button_Click"/>
+        <Button x:Name="Logout_Button" Content="Oturumu kapat" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="130,700,0,0" Width="300" Click="Logout_Button_Click"/>
     </Grid>
 </Page>

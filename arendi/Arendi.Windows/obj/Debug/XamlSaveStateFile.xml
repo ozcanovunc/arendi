@@ -1,5 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\ozcanovunc\documents\github\arendi\arendi\arendi.windows\obj\debug\intermediatexaml\arendi.windows.exe" HashGuid="821e4a34-acfa-7c6f-c197-84760282ed8a" />
+    <LocalAssembly PathName="c:\users\ozcanovunc\documents\github\arendi\arendi\arendi.windows\obj\debug\intermediatexaml\arendi.windows.exe" HashGuid="df45994e-9c47-248c-daa7-ee1b4a10f0fe" />
+    <ReferenceAssembly PathName="c:\users\ozcanovunc\documents\github\arendi\arendi.datamodel\bin\debug\arendi.datamodel.dll" HashGuid="f80cc9ec-4256-22da-9ad4-4821c5850f59" />
+    <ReferenceAssembly PathName="c:\users\ozcanovunc\documents\github\arendi\packages\newtonsoft.json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\newtonsoft.json.dll" HashGuid="86223907-5808-be51-71b4-c872f8140e29" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

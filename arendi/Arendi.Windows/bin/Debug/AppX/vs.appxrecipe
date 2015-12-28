@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-G9LFVNK</Machine>
+    <WindowsUser>ozcanovunc</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>51187ozcanovunc.FikirDeposu</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>5687DFA832DB690E8A8611913E7ED23344AAE010BE08187BD1F90FE94D12769D</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>51187ozcanovunc.FikirDeposu_1.1.0.0_neutral__gveschbpp6afc</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>51187ozcanovunc.FikirDeposu_gveschbpp6afc!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>51187ozcanovunc.FikirDeposu</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=A6FB5F94-FCBB-4A42-9431-3CB505202850</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-28T19:05:18.437</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\Arendi.Windows.exe">
+      <PackagePath>Arendi.Windows.exe</PackagePath>
+      <Modified>2015-12-28T19:05:18.235</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.DataModel\bin\Debug\Arendi.DataModel.dll">
+      <PackagePath>Arendi.DataModel.dll</PackagePath>
+      <Modified>2015-12-28T14:34:09.076</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2015-12-04T12:46:18.897</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\Assets\background02.jpg">
+      <PackagePath>Assets\background02.jpg</PackagePath>
+      <Modified>2015-12-28T09:39:50.758</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-04T12:46:15.096</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\Assets\main-background.png">
+      <PackagePath>Assets\main-background.png</PackagePath>
+      <Modified>2015-12-28T09:40:18.673</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-04T12:46:15.097</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-04T12:46:15.099</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-12-04T12:46:15.099</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\Assets\WideLogo.scale-100.png">
+      <PackagePath>Assets\WideLogo.scale-100.png</PackagePath>
+      <Modified>2015-12-04T12:46:15.101</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Shared\Assets\LightGray.png">
+      <PackagePath>Assets\LightGray.png</PackagePath>
+      <Modified>2015-12-04T12:46:14.890</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Shared\Assets\MediumGray.png">
+      <PackagePath>Assets\MediumGray.png</PackagePath>
+      <Modified>2015-12-04T12:46:14.891</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Shared\Assets\DarkGray.png">
+      <PackagePath>Assets\DarkGray.png</PackagePath>
+      <Modified>2015-12-04T12:46:14.890</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Shared\DataModel\SampleData.json">
+      <PackagePath>DataModel\SampleData.json</PackagePath>
+      <Modified>2015-12-04T12:46:15.069</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\Arendi.Windows.xr.xml">
+      <PackagePath>Arendi.Windows.xr.xml</PackagePath>
+      <Modified>2015-12-28T18:54:22.773</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-12-28T16:41:33.646</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\HelpPage.xbf">
+      <PackagePath>HelpPage.xbf</PackagePath>
+      <Modified>2015-12-28T14:34:10.392</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\HubPage.xbf">
+      <PackagePath>HubPage.xbf</PackagePath>
+      <Modified>2015-12-28T19:05:18.039</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\LoginPage.xbf">
+      <PackagePath>LoginPage.xbf</PackagePath>
+      <Modified>2015-12-28T14:34:10.395</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-12-28T14:34:10.398</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\SectionPage.xbf">
+      <PackagePath>SectionPage.xbf</PackagePath>
+      <Modified>2015-12-04T23:20:56.920</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\ItemPage.xbf">
+      <PackagePath>ItemPage.xbf</PackagePath>
+      <Modified>2015-12-04T23:20:56.923</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\SettingsPage.xbf">
+      <PackagePath>SettingsPage.xbf</PackagePath>
+      <Modified>2015-12-28T14:34:10.400</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\SignupPage.xbf">
+      <PackagePath>SignupPage.xbf</PackagePath>
+      <Modified>2015-12-28T14:34:10.403</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-12-28T19:05:18.339</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

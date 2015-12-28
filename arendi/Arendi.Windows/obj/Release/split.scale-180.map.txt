@@ -1,0 +1,7 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.scale-180"
+"ResourceDimensions"		"scale-180"
+
+[Files]
+"C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\obj\Release\split.scale-180.pri"			"resources.pri"
+"C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\obj\Release\PackageLayout\Assets\background02.scale-180.jpg"			"Assets\background02.scale-180.jpg"

@@ -14,106 +14,210 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Arendi.Data;
 using Arendi.Common;
-
-// The Universal Hub Application project template is documented at http://go.microsoft.com/fwlink/?LinkID=391955
+using Arendi.DataModel;
+using Windows.UI.Popups;
+using System.Diagnostics;
 
 namespace Arendi
 {
-    /// <summary>
-    /// A page that displays a grouped collection of items.
-    /// </summary>
     public sealed partial class HubPage : Page
     {
-        private NavigationHelper navigationHelper;
-        private ObservableDictionary defaultViewModel = new ObservableDictionary();
-
-        /// <summary>
-        /// Gets the NavigationHelper used to aid in navigation and process lifetime management.
-        /// </summary>
-        public NavigationHelper NavigationHelper
-        {
-            get { return this.navigationHelper; }
-        }
-
-        /// <summary>
-        /// Gets the DefaultViewModel. This can be changed to a strongly typed view model.
-        /// </summary>
-        public ObservableDictionary DefaultViewModel
-        {
-            get { return this.defaultViewModel; }
-        }
-
+        private HubIdea selected_idea_of_mine = null;
+        private User selected_user = null;
+       
         public HubPage()
         {
             this.InitializeComponent();
-            this.navigationHelper = new NavigationHelper(this);
-            this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
+            InitNameAndSurname();
+            DataContext = App.viewModel;
+            IdeaCollection.Source = App.viewModel.Ideas;
+            UserCollection.Source = App.viewModel.Users;
+            BindIdeasToCollection();
+            BindUsersToCollection();
         }
 
-        /// <summary>
-        /// Populates the page with content passed during navigation.  Any saved state is also
-        /// provided when recreating a page from a prior session.
-        /// </summary>
-        /// <param name="sender">
-        /// The source of the event; typically <see cref="NavigationHelper"/>
-        /// </param>
-        /// <param name="e">Event data that provides both the navigation parameter passed to
-        /// <see cref="Frame.Navigate(Type, object)"/> when this page was initially requested and
-        /// a dictionary of state preserved by this page during an earlier
-        /// session.  The state will be null the first time a page is visited.</param>
-        private async void NavigationHelper_LoadState(object sender, LoadStateEventArgs e)
+        private void InitNameAndSurname()
         {
-            // TODO: Create an appropriate data model for your problem domain to replace the sample data
-            var sampleDataGroup = await SampleDataSource.GetGroupAsync("Group-4");
-            this.DefaultViewModel["Section3Items"] = sampleDataGroup;
+            string name = App.RoamingSettings.Values["Username"].ToString();
+            string surname = App.RoamingSettings.Values["Surname"].ToString();
+            Text_Name.Text = name;
+            Text_Surname.Text = surname;
         }
 
-        /// <summary>
-        /// Invoked when a HubSection header is clicked.
-        /// </summary>
-        /// <param name="sender">The Hub that contains the HubSection whose header was clicked.</param>
-        /// <param name="e">Event data that describes how the click was initiated.</param>
-        void Hub_SectionHeaderClick(object sender, HubSectionHeaderClickEventArgs e)
+        private async void HubPage_MyIdeas_FlyOut_Delete(object sender, RoutedEventArgs e)
         {
-            HubSection section = e.Section;
-            var group = section.DataContext;
-            this.Frame.Navigate(typeof(SectionPage), ((SampleDataGroup)group).UniqueId);
+            MessageDialog msgbox =
+                new MessageDialog("Fikri silmek istediğinizden emin misiniz?", "Fikri sil");
+            msgbox.Commands.Add(new UICommand { Label = "Evet", Id = 0 });
+            msgbox.Commands.Add(new UICommand { Label = "Hayır", Id = 1 });
+            var res = await msgbox.ShowAsync();
+            if ((int)res.Id == 0)
+            {
+                // Delete idea
+                await Controllers.IdeaController.DeleteIdeaById(selected_idea_of_mine.id);
+
+                // Delete each comment corresponding idea
+                List<Comment> comments =
+                    await Controllers.CommentController.GetCommentsByIdeaId(selected_idea_of_mine.id);
+                foreach (var comment in comments)
+                {
+                    await Controllers.CommentController.DeleteCommentById(comment.ID);
+                }
+
+                BindIdeasToCollection();
+                selected_idea_of_mine = null;
+            }
         }
 
-        /// <summary>
-        /// Invoked when an item within a section is clicked.
-        /// </summary>
-        /// <param name="sender">The GridView or ListView
-        /// displaying the item clicked.</param>
-        /// <param name="e">Event data that describes the item clicked.</param>
-        void ItemView_ItemClick(object sender, ItemClickEventArgs e)
+        private async void DeleteWorker_Button_Click(object sender, RoutedEventArgs e)
         {
-            // Navigate to the appropriate destination page, configuring the new page
-            // by passing required information as a navigation parameter
-            var itemId = ((SampleDataItem)e.ClickedItem).UniqueId;
-            this.Frame.Navigate(typeof(ItemPage), itemId);
-        }
-        #region NavigationHelper registration
+            if (selected_user != null)
+            {
+                MessageDialog msgbox =
+                    new MessageDialog("Çalışanı silmek istediğinizden emin misiniz?", "Çalışanı sil");
+                msgbox.Commands.Add(new UICommand { Label = "Evet", Id = 0 });
+                msgbox.Commands.Add(new UICommand { Label = "Hayır", Id = 1 });
+                var res = await msgbox.ShowAsync();
+                if ((int)res.Id == 0)
+                {
+                    // Delete idea
+                    await Controllers.UserController.DeleteUserByEmail(selected_user.Email);
 
-        /// <summary>
-        /// The methods provided in this section are simply used to allow
-        /// NavigationHelper to respond to the page's navigation methods.
-        /// Page specific logic should be placed in event handlers for the  
-        /// <see cref="Common.NavigationHelper.LoadState"/>
-        /// and <see cref="Common.NavigationHelper.SaveState"/>.
-        /// The navigation parameter is available in the LoadState method 
-        /// in addition to page state preserved during an earlier session.
-        /// </summary>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+                    // Delete each idea corresponding user
+                    List<Idea> ideas = await Controllers.IdeaController.GetIdeas();
+
+                    foreach (var idea in ideas)
+                    {
+                        // Delete the idea and all it's comments
+                        if (idea.UserID == selected_user.ID)
+                        {
+                            await Controllers.IdeaController.DeleteIdeaById(idea.ID);
+                            List<Comment> comments =
+                                await Controllers.CommentController.GetCommentsByIdeaId(idea.ID);
+                            foreach (var comment in comments)
+                            {
+                                await Controllers.CommentController.DeleteCommentById(comment.ID);
+                            }
+                        }
+                    }
+
+                    BindIdeasToCollection();
+                    BindUsersToCollection();
+                    selected_idea_of_mine = null;
+                }
+            }
+        }
+
+        private void DeleteIdea_Button_Click(object sender, RoutedEventArgs e)
         {
-            this.navigationHelper.OnNavigatedTo(e);
+            if (selected_idea_of_mine != null)
+                HubPage_MyIdeas_FlyOut_Delete(sender, e);
         }
 
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        private async void BindUsersToCollection()
         {
-            this.navigationHelper.OnNavigatedFrom(e);
+            this.IsEnabled = false;
+            HubPage_ProcessRing.IsActive = true;
+
+            string company = App.RoamingSettings.Values["Company"].ToString();
+            List<User> user_list = await Controllers.UserController.GetAllUsers();
+
+            App.viewModel.Users.Clear();
+
+            foreach (var user in user_list)
+            {
+                if (user.Type == "w" + company)
+                    App.viewModel.Users.Add(user);
+            }
+
+            HubPage_ProcessRing.IsActive = false;
+            this.IsEnabled = true;
         }
 
-        #endregion
+        private async void BindIdeasToCollection()
+        {
+            this.IsEnabled = false;
+            HubPage_ProcessRing.IsActive = true;
+
+            string company = App.RoamingSettings.Values["Company"].ToString();
+            List<Idea> ideas = await Controllers.IdeaController.GetIdeas();
+
+            App.viewModel.Ideas.Clear();
+
+            foreach (var idea in ideas)
+            {
+                User user = await Controllers.UserController.GetUserById(idea.UserID);
+
+                // If that idea belongs to our company then show it
+                if (user != null && user.Type == "w" + company)
+                {
+                    HubIdea hub_idea = new HubIdea
+                    {
+                        iUsername = user.Username,
+                        iHeader = idea.Content.Split(new string[] { "///" }, StringSplitOptions.None)[0],
+                        iContent = idea.Content.Split(new string[] { "///" }, StringSplitOptions.None)[1],
+                        iDate = idea.Date,
+                        id = idea.ID,
+                        uid = user.ID
+                    };
+                                       
+                    App.viewModel.Ideas.Add(hub_idea);                   
+                }
+            }
+
+            HubPage_ProcessRing.IsActive = false;
+            this.IsEnabled = true;
+        }
+
+        private void Refresh_Button_Click(object sender, RoutedEventArgs e)
+        {
+            BindIdeasToCollection();
+            BindUsersToCollection();
+        }
+
+        private void IdeaSelectionChanged_Event(object sender, SelectionChangedEventArgs e)
+        {
+            ListView list = (ListView)GetChildren(HubSection1).ElementAt(12);
+            selected_idea_of_mine = list.SelectedItem as HubIdea;
+        }
+
+        private void UserSelectionChanged_Event(object sender, SelectionChangedEventArgs e)
+        {
+            ListView list = (ListView)GetChildren(HubSection2).ElementAt(12);
+            selected_user = list.SelectedItem as User;
+        }
+
+        private List<FrameworkElement> GetChildren(DependencyObject parent)
+        {
+            List<FrameworkElement> controls = new List<FrameworkElement>();
+
+            for (int i = 0; i < VisualTreeHelper.GetChildrenCount(parent); ++i)
+            {
+                var child = VisualTreeHelper.GetChild(parent, i);
+                if (child is FrameworkElement)
+                {
+                    controls.Add(child as FrameworkElement);
+                }
+                controls.AddRange(GetChildren(child));
+            }
+
+            return controls;
+        }
+
+        private async void Logout_Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageDialog msgbox =
+                new MessageDialog("Oturumu kapatmak istediğinize emin misiniz?", "Oturumu kapat");
+            msgbox.Commands.Add(new UICommand { Label = "Evet", Id = 0 });
+            msgbox.Commands.Add(new UICommand { Label = "Hayır", Id = 1 });
+            var res = await msgbox.ShowAsync();
+
+            if ((int)res.Id == 0)
+            {
+                // Log out
+                App.RoamingSettings.Values["Loggedin"] = false;
+                App.Current.Exit();
+            }
+        }
     }
 }

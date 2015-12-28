@@ -8,7 +8,7 @@
     <TargetOsDescription>Windows 8.1</TargetOsDescription>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <PackageIdentityName>85151b1a-1026-4f10-8968-72d7a52d1770</PackageIdentityName>
+    <PackageIdentityName>51187ozcanovunc.FikirDeposu</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\obj\Debug\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
@@ -21,9 +21,21 @@
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\Arendi.Windows.exe">
       <PackagePath>Arendi.Windows.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.DataModel\bin\Debug\Arendi.DataModel.dll">
+      <PackagePath>Arendi.DataModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\Assets\background02.jpg">
+      <PackagePath>Assets\background02.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\Assets\main-background.png">
+      <PackagePath>Assets\main-background.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\Assets\SmallLogo.scale-100.png">
       <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
@@ -58,6 +70,9 @@
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\HelpPage.xbf">
+      <PackagePath>HelpPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\HubPage.xbf">
       <PackagePath>HubPage.xbf</PackagePath>
     </AppxPackagedFile>
@@ -72,6 +87,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\ItemPage.xbf">
       <PackagePath>ItemPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\SettingsPage.xbf">
+      <PackagePath>SettingsPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\SignupPage.xbf">
+      <PackagePath>SignupPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

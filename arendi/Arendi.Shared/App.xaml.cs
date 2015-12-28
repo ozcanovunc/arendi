@@ -18,7 +18,11 @@ using Windows.UI.Xaml.Navigation;
 using Arendi.Common;
 using Windows.Storage;
 using Arendi.DataModel;
-using Arendi.Pages;
+using Windows.UI.ViewManagement;
+
+#if WINDOWS_PHONE_APP
+    using Arendi.Pages;
+#endif
 
 namespace Arendi
 {
@@ -66,7 +70,11 @@ namespace Arendi
                 this.DebugSettings.EnableFrameRateCounter = false;
             }
 #endif
+#if !WINDOWS_PHONE_APP
+            var applicationView = ApplicationView.GetForCurrentView();
+            var titleBar = applicationView.Title = "Admin Paneli";
 
+#endif
             Frame rootFrame = Window.Current.Content as Frame;
 
             // Do not repeat app initialization when the Window already has content,

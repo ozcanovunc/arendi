@@ -13,8 +13,19 @@ namespace Arendi.DataModel
         private ObservableCollection<HubComment> _Comments = new ObservableCollection<HubComment>();
         private ObservableCollection<HubComment> _MyComments = new ObservableCollection<HubComment>();
         private ObservableCollection<HubIdea> _MyIdeas = new ObservableCollection<HubIdea>();
+        private ObservableCollection<User> _Users = new ObservableCollection<User>();
 
         public event PropertyChangedEventHandler PropertyChanged;
+
+        public ObservableCollection<User> Users
+        {
+            get { return _Users; }
+            set
+            {
+                _Users = value;
+                NotifyPropertyChanged("Users");
+            }
+        }
 
         public ObservableCollection<HubIdea> Ideas
         {

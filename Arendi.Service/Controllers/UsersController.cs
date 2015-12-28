@@ -3,12 +3,34 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web.Http;
 using Arendi.Service.Models;
+using System.Collections.Generic;
 
 namespace Arendi.Service.Controllers
 {
     public class UsersController : ApiController
     {
         private ArendiDBEntities db = new ArendiDBEntities();
+
+        [Route("get/getallusers")]
+        [HttpGet]
+        public List<User> GetAllUsers()
+        {
+            var users = db.Users;
+            var user_list = new List<User>();
+
+            if (users != null)
+            {
+                foreach (var user in users)
+                {
+                    user_list.Add(user);
+                }
+                return user_list;
+            }
+            else
+            {
+                return null;
+            }
+        }
 
         // TODO: NotFound stuff
         [Route("get/getuserbyemail")]

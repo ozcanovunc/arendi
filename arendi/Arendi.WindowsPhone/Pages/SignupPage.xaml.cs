@@ -51,7 +51,7 @@ namespace Arendi
             string company = string.Empty;
 
             this.IsEnabled = false;
-            SignupPage_ProcessRing.IsEnabled = true;
+            SignupPage_ProcessRing.IsActive = true;
 
             try {
                 // Recolor all the fields
@@ -136,7 +136,7 @@ namespace Arendi
             }
             finally
             {
-                SignupPage_ProcessRing.IsEnabled = false;
+                SignupPage_ProcessRing.IsActive = false;
                 this.IsEnabled = true;
             }
         }

@@ -2,3 +2,4 @@ C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.DataModel\bin\Release\Arendi.
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.DataModel\bin\Release\Arendi.DataModel.pdb
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.DataModel\obj\Release\Arendi.DataModel.dll
 C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.DataModel\obj\Release\Arendi.DataModel.pdb
+C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.DataModel\obj\Release\Arendi.DataModel.csprojResolveAssemblyReference.cache

@@ -10,29 +10,29 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>51187ozcanovunc.FikirDeposu</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\obj\Release\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>1CD0712B9F5976A61D7F641654BDE719BF814E1502FDD8431CDFCB1BFEEC8C8E</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>51187ozcanovunc.FikirDeposu_1.1.0.2_neutral__gveschbpp6afc</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>1DC80579D639B8B62329B268A7B6F9DC612F6EB7F631202CC1EA1F68050EFD6F</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>51187ozcanovunc.FikirDeposu_1.1.0.5_neutral__gveschbpp6afc</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>51187ozcanovunc.FikirDeposu_gveschbpp6afc!App</RegisteredUserModeAppID>
     <RegisteredPackageID>51187ozcanovunc.FikirDeposu</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=A6FB5F94-FCBB-4A42-9431-3CB505202850</RegisteredPackagePublisher>
-    <RegisteredVersion>1.1.0.2</RegisteredVersion>
+    <RegisteredVersion>1.1.0.5</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-28T19:33:57.382</Modified>
+      <Modified>2015-12-28T19:44:27.127</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Release\Arendi.Windows.exe">
       <PackagePath>Arendi.Windows.exe</PackagePath>
-      <Modified>2015-12-28T19:31:14.040</Modified>
+      <Modified>2016-01-12T11:19:04.559</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi.DataModel\bin\Release\Arendi.DataModel.dll">
       <PackagePath>Arendi.DataModel.dll</PackagePath>
-      <Modified>2015-12-28T19:06:07.978</Modified>
+      <Modified>2016-01-12T11:12:38.558</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -45,7 +45,7 @@
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\Assets\Logo.scale-100.png">
       <PackagePath>Assets\Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-04T12:46:15.096</Modified>
+      <Modified>2015-12-28T19:43:35.839</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\Assets\main-background.png">
       <PackagePath>Assets\main-background.png</PackagePath>
@@ -104,11 +104,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Release\LoginPage.xbf">
       <PackagePath>LoginPage.xbf</PackagePath>
-      <Modified>2015-12-28T19:06:09.291</Modified>
+      <Modified>2016-01-12T11:17:26.206</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Release\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2015-12-28T19:06:09.291</Modified>
+      <Modified>2016-01-12T11:19:04.410</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Release\SectionPage.xbf">
       <PackagePath>SectionPage.xbf</PackagePath>
@@ -124,11 +124,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Release\SignupPage.xbf">
       <PackagePath>SignupPage.xbf</PackagePath>
-      <Modified>2015-12-28T19:06:09.296</Modified>
+      <Modified>2016-01-12T11:18:03.667</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ozcanovunc\Documents\GitHub\arendi\Arendi\Arendi.Windows\bin\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-28T19:33:57.263</Modified>
+      <Modified>2015-12-28T19:44:26.995</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -12,41 +12,41 @@
             <ImageBrush ImageSource="/Assets/main-background.png"/>
         </Grid.Background>
         
-        <TextBlock Text="Fikir Deposu" Margin="650,100,20,20" FontFamily="/Fonts/gothic_0.TTF#Century Gothic" FontSize="54" Foreground="White" FontWeight="Bold"/>
+        <TextBlock Text="Fikir Deposu" Margin="660,100,20,20" FontFamily="/Fonts/gothic_0.TTF#Century Gothic" FontSize="54" Foreground="White" FontWeight="Bold"/>
 
-        <StackPanel Margin="20,240,20,430">
+        <StackPanel Margin="500,240,500,430">
             <Border Name="SignupPage_NameBorder" Margin="5,10,5,10" BorderThickness="0" BorderBrush="White" Background="White" CornerRadius="6" Height="50">
                 <!-- Textbox for name -->
                 <TextBox Name="SignupPage_NameText" MaxLength="14" PlaceholderText="İsim" BorderThickness="0" Background="White" BorderBrush="White" VerticalAlignment="Center" Margin="5,10,5,10" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
             </Border>
         </StackPanel>
 
-        <StackPanel Margin="20,310,20,360">
+        <StackPanel Margin="500,310,500,360">
             <Border Name="SignupPage_SurnameBorder" Margin="5,10,5,10" BorderThickness="0" BorderBrush="White" Background="White" CornerRadius="6" Height="50">
                 <!-- Textbox for surname -->
                 <TextBox Name="SignupPage_SurnameText" MaxLength="14" PlaceholderText="Soyisim" BorderThickness="0" Background="White" BorderBrush="White" VerticalAlignment="Center" Margin="5,10,5,10" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
             </Border>
         </StackPanel>
 
-        <StackPanel Margin="20,380,20,290">
+        <StackPanel Margin="500,380,500,290">
             <Border Name="SignupPage_MailBorder" Margin="5,10,5,10" BorderThickness="0" BorderBrush="White" Background="White" CornerRadius="6" Height="50">
                 <!-- Textbox for email -->
                 <TextBox Name="SignupPage_MailText" MaxLength="30" PlaceholderText="Mail" BorderThickness="0" Background="White" BorderBrush="White" VerticalAlignment="Center" Margin="5,10,5,10" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
             </Border>
         </StackPanel>
 
-        <StackPanel Margin="20,450,20,220">
+        <StackPanel Margin="500,450,500,220">
             <Border Name="SignupPage_CompanyBorder" Margin="5,10,5,10" BorderThickness="0" BorderBrush="White" Background="White" CornerRadius="6" Height="50">
                 <TextBox Name="SignupPage_CompanyText" MaxLength="30" PlaceholderText="Yeni şirket" BorderThickness="0" Background="White" BorderBrush="White" VerticalAlignment="Center" Margin="5,10,5,10" FontFamily="/Fonts/gothic_0.TTF#Century Gothic" />
             </Border>
         </StackPanel>
 
-        <StackPanel Margin="20,520,20,20">
+        <StackPanel Margin="500,520,500,20">
             <Border Name="SignupPage_PasswordBorder" Margin="5,10,5,10" BorderThickness="0" BorderBrush="White" Background="White" CornerRadius="6" Height="50">
                 <!-- Textbox for password -->
                 <PasswordBox Name="SignupPage_PasswordText" MaxLength="30" PlaceholderText="Şifre" BorderThickness="0" Background="White" BorderBrush="White" VerticalAlignment="Center" Margin="5,10,5,10" FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
             </Border>
-            <Button x:ConnectionId='1'  Name="SignupPage_SignupButton" Content="Kaydol" BorderThickness="2" BorderBrush="White" VerticalAlignment="Center" Width="1600" Margin="5,10,0,0" Height="70"                                       FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
+            <Button x:ConnectionId='1'  Name="SignupPage_SignupButton" Content="Kaydol" BorderThickness="2" BorderBrush="White" VerticalAlignment="Center" Width="630" Margin="5,10,0,0" Height="70"                                       FontFamily="/Fonts/gothic_0.TTF#Century Gothic"/>
         </StackPanel>
 
         <ProgressRing Name="SignupPage_ProcessRing" Foreground="#0E3757" Opacity="0.6" Height="300" Width="300"/>

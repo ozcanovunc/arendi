@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="51187ozcanovunc.FikirDeposu" Publisher="CN=A6FB5F94-FCBB-4A42-9431-3CB505202850" Version="1.2.0.7" ProcessorArchitecture="neutral" />
+  <Identity Name="51187ozcanovunc.FikirDeposu" Publisher="CN=A6FB5F94-FCBB-4A42-9431-3CB505202850" Version="1.2.0.8" ProcessorArchitecture="neutral" />
   <mp:PhoneIdentity PhoneProductId="0ccde3f9-2080-45a2-b3f4-6432044efe6f" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Fikir Deposu</DisplayName>
@@ -23,7 +23,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="Arendi.WindowsPhone.exe" EntryPoint="Arendi.WindowsPhone.App">
-      <m3:VisualElements DisplayName="Arendi" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="Arendi.WindowsPhone" ForegroundText="light" BackgroundColor="transparent">
+      <m3:VisualElements DisplayName="Fikir Deposu" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="Arendi.WindowsPhone" ForegroundText="light" BackgroundColor="transparent">
         <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png"></m3:DefaultTile>
       </m3:VisualElements>
     </Application>

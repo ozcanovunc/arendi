@@ -364,6 +364,7 @@
     </ReservedNames>
   </ProductReservedInfo>
   <AccountPackageIdentityNames>
+    <MainPackageIdentityName>51187ozcanovunc.CardsAgainstOriginality</MainPackageIdentityName>
     <MainPackageIdentityName>51187ozcanovunc.Brick-Breaker</MainPackageIdentityName>
     <MainPackageIdentityName>51187ozcanovunc.PianoTilesDontTapTheWhiteTile</MainPackageIdentityName>
     <MainPackageIdentityName>51187ozcanovunc.QRReaderforWP</MainPackageIdentityName>
@@ -371,5 +372,18 @@
     <MainPackageIdentityName>51187ozcanovunc.Topper</MainPackageIdentityName>
     <MainPackageIdentityName>51187ozcanovunc.YellMessenger</MainPackageIdentityName>
   </AccountPackageIdentityNames>
-  <PackageInfoList LandingUrl="https://dev.windows.com/dashboard/Application?appId=9NBLGGH5JJXB" />
+  <PackageInfoList LandingUrl="https://dev.windows.com/dashboard/Application?appId=9NBLGGH5JJXB">
+    <BundleInfo>
+      <PackageInfo>
+        <OsMinVersion>6.3.0.0</OsMinVersion>
+        <PackageArchitecture>Neutral</PackageArchitecture>
+        <PackageMaxArchitectureVersion>1.1.0.5</PackageMaxArchitectureVersion>
+      </PackageInfo>
+      <PackageInfo>
+        <OsMinVersion>6.3.0.0</OsMinVersion>
+        <PackageArchitecture>Neutral</PackageArchitecture>
+        <PackageMaxArchitectureVersion>1.1.0.5</PackageMaxArchitectureVersion>
+      </PackageInfo>
+    </BundleInfo>
+  </PackageInfoList>
 </StoreAssociation>

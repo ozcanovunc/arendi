@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="51187ozcanovunc.FikirDeposu" Publisher="CN=A6FB5F94-FCBB-4A42-9431-3CB505202850" Version="1.1.0.5" />
+  <Identity Name="51187ozcanovunc.FikirDeposu" Publisher="CN=A6FB5F94-FCBB-4A42-9431-3CB505202850" Version="1.1.0.6" />
   <Properties>
     <DisplayName>Fikir Deposu</DisplayName>
     <PublisherDisplayName>ozcanovunc</PublisherDisplayName>

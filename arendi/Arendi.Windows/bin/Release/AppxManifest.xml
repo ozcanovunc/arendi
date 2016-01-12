@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="51187ozcanovunc.FikirDeposu" Publisher="CN=A6FB5F94-FCBB-4A42-9431-3CB505202850" Version="1.1.0.5" ProcessorArchitecture="neutral" />
+  <Identity Name="51187ozcanovunc.FikirDeposu" Publisher="CN=A6FB5F94-FCBB-4A42-9431-3CB505202850" Version="1.1.0.6" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>Fikir Deposu</DisplayName>
     <PublisherDisplayName>ozcanovunc</PublisherDisplayName>

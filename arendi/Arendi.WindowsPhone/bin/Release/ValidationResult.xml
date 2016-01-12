@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\wp-results.xsl'?>
-<REPORT xml:lang="en-US" OVERALL_RESULT="PASS" VERSION="10.0" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="WindowsPhone" PUBLISHER_DISPLAY_NAME="CN=A6FB5F94-FCBB-4A42-9431-3CB505202850" APP_NAME="51187ozcanovunc.FikirDeposu" APP_VERSION="1.2.0.7" OSVERSION="10.0.10240.0" OS="Microsoft Windows 10 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1033" VALIDATION_TYPE="UI" ReportGenerationTime="2015-12-28 14:45:35" ID="079be09c8559be782d8da60ccae331d9">
+<REPORT xml:lang="en-US" OVERALL_RESULT="PASS" VERSION="10.0" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="WindowsPhone" PUBLISHER_DISPLAY_NAME="CN=A6FB5F94-FCBB-4A42-9431-3CB505202850" APP_NAME="51187ozcanovunc.FikirDeposu" APP_VERSION="1.2.0.8" OSVERSION="10.0.10240.0" OS="Microsoft Windows 10 Pro" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="1033" VALIDATION_TYPE="UI" ReportGenerationTime="2016-01-12 13:54:57" ID="7756eaf97911988bb8934c2368769bbb">
   <REQUIREMENTS>
     <REQUIREMENT NUMBER="1" TITLE="Clean reversible install test" RATIONALE="A clean, reversible, installation allows users to successfully manage (deploy, and remove) applications on their system." />
     <REQUIREMENT NUMBER="2" TITLE="Install to the correct folders test" RATIONALE="Windows provides specific locations in the file system to store programs and software components, shared application data, and application data specific to a user." />
@@ -14,11 +14,11 @@
     <REQUIREMENT NUMBER="10" TITLE="Deployment and launch tests" RATIONALE="Application failures such as crashes and hangs are a major disruption to users and cause frustration. Eliminating such failures improves application stability and reliability, and overall, provides users with a better application experience." />
     <REQUIREMENT NUMBER="11" TITLE="Compatibility and resiliency test" RATIONALE="When Windows detects that an application has operated in an incompatible manner, it applies a compatibility fix that causes the application to behave correctly, ensuring a positive user experience. Applications should not rely on this behavior since it is only provided to allow legacy applications to work correctly on Windows." />
     <REQUIREMENT NUMBER="12" TITLE="Package compliance test" RATIONALE="The package manifest was missing one or more required attributes.">
-      <TEST INDEX="77" NAME="Application count" DESCRIPTION="One package should not define more than one app in the manifest." EXECUTIONTIME="00h:00m:00s.89ms">
+      <TEST INDEX="77" NAME="Application count" DESCRIPTION="One package should not define more than one app in the manifest." EXECUTIONTIME="00h:00m:01s.56ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:00s.89ms">
+      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:00s.87ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
@@ -26,76 +26,76 @@
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="75" NAME="Package size" DESCRIPTION="Package file size should not be greater than 4 gigabytes." EXECUTIONTIME="00h:00m:00s.95ms">
+      <TEST INDEX="75" NAME="Package size" DESCRIPTION="Package file size should not be greater than 4 gigabytes." EXECUTIONTIME="00h:00m:01s.20ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="13" TITLE="Windows security best practices test" RATIONALE="An application should not change the default Windows security settings." />
     <REQUIREMENT NUMBER="14" TITLE="Windows security features test" RATIONALE="Applications must opt-into Windows security features.">
-      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:01s.27ms">
+      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:01s.88ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:00s.95ms">
+      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:01s.01ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:00s.83ms">
+      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:00s.81ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="15" TITLE="Supported API test" RATIONALE="The application should only refer to the APIs allowed by the Windows SDK for Windows Store Apps.">
-      <TEST INDEX="72" NAME="Supported APIs" DESCRIPTION="Windows Phone App must only use supported platform APIs." EXECUTIONTIME="00h:00m:01s.43ms">
+      <TEST INDEX="72" NAME="Supported APIs" DESCRIPTION="Windows Phone App must only use supported platform APIs." EXECUTIONTIME="00h:00m:02s.12ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="17" TITLE="Performance test" RATIONALE="The application should have a fast and responsive launch and suspend experience while consuming a reasonable amount of system resources (CPU, File IO, Memory etc.) to enable fast switching and multitasking between previously unopened applications." />
     <REQUIREMENT NUMBER="19" TITLE="App manifest resources tests" RATIONALE="The App Package Manifest should have valid resources defined in the resources.pri file, as per the App Packaging Specification and App Manifest Schema.">
-      <TEST INDEX="45" NAME="App resources" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.79ms">
+      <TEST INDEX="45" NAME="App resources" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:01s.18ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="61" NAME="Branding" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:01s.58ms">
+      <TEST INDEX="61" NAME="Branding" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:01s.76ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="20" TITLE="Debug configuration test" RATIONALE="The App should not install any debug binaries.">
-      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:00s.93ms">
+      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:01s.03ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="21" TITLE="File encoding test" RATIONALE="Packages containing an HTML5 Windows Store app must have correct file encoding.">
-      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:00s.85ms">
+      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:00s.79ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="22" TITLE="Direct3D Feature Test" RATIONALE="App should use the Direct3D capability correctly." />
     <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process.">
-      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:00s.87ms">
+      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:00s.81ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="24" TITLE="Windows Runtime metadata validation" RATIONALE="Metadata needs to be conformant and consistent across all generation sources.">
-      <TEST INDEX="56" NAME="ExclusiveTo attribute" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:01s.54ms">
+      <TEST INDEX="56" NAME="ExclusiveTo attribute" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:01s.77ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="57" NAME="Type location" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:00s.63ms">
+      <TEST INDEX="57" NAME="Type location" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:00s.64ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="55" NAME="Type name case-sensitivity" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:00s.68ms">
+      <TEST INDEX="55" NAME="Type name case-sensitivity" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:00s.59ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
-      <TEST INDEX="54" NAME="Type name correctness" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:00s.68ms">
+      <TEST INDEX="54" NAME="Type name correctness" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:00s.61ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
@@ -109,14 +109,14 @@
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="25" TITLE="Package sanity test" RATIONALE="Validation of the app package contents to ensure correctness.">
-      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:00s.84ms">
+      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:00s.82ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="26" TITLE="High-DPI support" RATIONALE="The application needs to set DPI-aware to make the UI look consistently good across a wide variety of high-DPI display settings." />
     <REQUIREMENT NUMBER="27" TITLE="Resource Usage Test" RATIONALE="WinJS background tasks need to call close() to free resource.">
-      <TEST INDEX="68" NAME="WinJS background task" DESCRIPTION="WinJS background tasks need to call close() to free resource." EXECUTIONTIME="00h:00m:00s.85ms">
+      <TEST INDEX="68" NAME="WinJS background task" DESCRIPTION="WinJS background tasks need to call close() to free resource." EXECUTIONTIME="00h:00m:00s.81ms">
         <RESULT><![CDATA[PASS]]></RESULT>
         <MESSAGES />
       </TEST>
@@ -124,12 +124,12 @@
   </REQUIREMENTS>
   <APPLICATIONS>
     <Installed_Programs>
-      <Program Name="51187ozcanovunc.FikirDeposu" Type="Application" Source="AppxPackage" Publisher="CN=A6FB5F94-FCBB-4A42-9431-3CB505202850" Version="1.2.0.7" Language="1033" InstallDate="12/28/2015 12:45:19" RootDirPath="C:\WINDOWS\temp\appcert_16C0\51187ozcanovunc.FikirDeposu_1.2.0.7_neutral__gveschbpp6afc" Id="000023489ff94db5c7535936d9a57e10700400000904">
+      <Program Name="51187ozcanovunc.FikirDeposu" Type="Application" Source="AppxPackage" Publisher="CN=A6FB5F94-FCBB-4A42-9431-3CB505202850" Version="1.2.0.8" Language="1033" InstallDate="01/12/2016 11:54:33" RootDirPath="C:\WINDOWS\temp\appcert_2FA0\51187ozcanovunc.FikirDeposu_1.2.0.8_neutral__gveschbpp6afc" Id="0000b9f5262f72e0ab5426ae71276eeadaac00000904">
         <Indicators>
           <WindowsStoreAppManifestIndicators>
-            <PackageManifest PackageFullName="51187ozcanovunc.fikirdeposu_1.2.0.7_neutral__gveschbpp6afc">
+            <PackageManifest PackageFullName="51187ozcanovunc.fikirdeposu_1.2.0.8_neutral__gveschbpp6afc">
               <Package>
-                <Identity Name="51187ozcanovunc.FikirDeposu" Publisher="CN=A6FB5F94-FCBB-4A42-9431-3CB505202850" Version="1.2.0.7" ProcessorArchitecture="neutral" />
+                <Identity Name="51187ozcanovunc.FikirDeposu" Publisher="CN=A6FB5F94-FCBB-4A42-9431-3CB505202850" Version="1.2.0.8" ProcessorArchitecture="neutral" />
                 <PhoneIdentity PhoneProductId="0ccde3f9-2080-45a2-b3f4-6432044efe6f" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
                 <Properties>
                   <DisplayName>Fikir Deposu</DisplayName>
@@ -145,7 +145,7 @@
                 </Resources>
                 <Applications>
                   <Application Id="App" Executable="Arendi.WindowsPhone.exe" EntryPoint="Arendi.WindowsPhone.App">
-                    <VisualElements DisplayName="Arendi" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="Arendi.WindowsPhone" ForegroundText="light" BackgroundColor="transparent">
+                    <VisualElements DisplayName="Fikir Deposu" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="Arendi.WindowsPhone" ForegroundText="light" BackgroundColor="transparent">
                       <DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png" />
                     </VisualElements>
                   </Application>
@@ -160,11 +160,11 @@
           </WindowsStoreAppManifestIndicators>
         </Indicators>
         <StaticProperties>
-          <Files Id="00002d9b9680c1c98e8743a0a93d352980636d21e13c">
-            <File Name="Newtonsoft.Json.dll" Id="00007b053202590d2f242c5ecf1ae2bba38315d4c70b" ProductName="Json.NET" CompanyName="Newtonsoft" ProductVersion="7.0.1.18622" VerLanguage="0" SwitchBackContext="0x0100000000000400" FileVersion="7.0.1.18622" Size="0x76600" SizeOfImage="0x7c000" PeHeaderHash="010182471c1e24212568a558bb3ea599b6cadf49a2b0" PeChecksum="0x79d33" BinProductVersion="7.0.1.18622" BinFileVersion="7.0.1.18622" FileDescription="Json.NET Portable" InternalName="Newtonsoft.Json.dll" LegalCopyright="Copyright © James Newton-King 2008" LinkDate="06/22/2015 11:05:01" BinaryType="PE32_CLR_IL" ClrVersion="v4.0.30319" OriginalFileName="Newtonsoft.Json.dll" LowerCaseLongPath="c:\windows\temp\appcert_16c0\51187ozcanovunc.fikirdeposu_1.2.0.7_neutral__gveschbpp6afc\newtonsoft.json.dll" LongPathHash="0000c2951c81aa577a64f1ede549498d639a979814ed" />
-            <File Name="resources.pri" Id="0000e9390ec1169e7c55ab9cc340061f2f33e1e1ec80" Size="0x4110" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_16c0\51187ozcanovunc.fikirdeposu_1.2.0.7_neutral__gveschbpp6afc\resources.pri" LongPathHash="0000ee1eb9ab6c1db9f8981665f95eb2b711653df8bf" />
-            <File Name="Arendi.DataModel.dll" Id="0000eca77213241d39650a6c9f98655902b4b062427c" ProductName="Arendi.DataModel" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0x0100000000000400" FileVersion="1.0.0.0" Size="0x1e00" SizeOfImage="0x8000" PeHeaderHash="01017dd51ce3e02e19a25989850906894a5ceba0cbe6" PeChecksum="0x0" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="Arendi.DataModel" InternalName="Arendi.DataModel.dll" LegalCopyright="Copyright ©  2015" LinkDate="12/27/2015 16:54:39" BinaryType="PE32_CLR_IL" ClrVersion="v4.0.30319" OriginalFileName="Arendi.DataModel.dll" LowerCaseLongPath="c:\windows\temp\appcert_16c0\51187ozcanovunc.fikirdeposu_1.2.0.7_neutral__gveschbpp6afc\arendi.datamodel.dll" LongPathHash="0000f6db4d6fbba97c9615cddbcfad54c162f0efc9cc" />
-            <File Name="Arendi.WindowsPhone.exe" Id="0000c3f37d9f87241aeebf23d6c18848d986f0227f74" ProductName="Arendi.WindowsPhone" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0x0100000000000602" FileVersion="1.0.0.0" Size="0x17a00" SizeOfImage="0x1e000" PeHeaderHash="0101fe3648196e1cf0bc459199d80cdb66eade3f02c6" PeChecksum="0x0" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="Arendi.WindowsPhone" InternalName="Arendi.WindowsPhone.exe" LegalCopyright="Copyright ©  2015" LinkDate="12/28/2015 12:41:22" BinaryType="PE32_CLR_IL_PREFER32" ClrVersion="v4.0.30319" OriginalFileName="Arendi.WindowsPhone.exe" LowerCaseLongPath="c:\windows\temp\appcert_16c0\51187ozcanovunc.fikirdeposu_1.2.0.7_neutral__gveschbpp6afc\arendi.windowsphone.exe" LongPathHash="000004be4ef76b4493782bac583dfeac501faac68451" />
+          <Files Id="0000feec7f48e4f62aac0f0f1436d81b89ef2c203305">
+            <File Name="Arendi.DataModel.dll" Id="00006d5f309cc0fda76a0131f98642f22c96156fbd53" ProductName="Arendi.DataModel" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0x0100000000000400" FileVersion="1.0.0.0" Size="0x1e00" SizeOfImage="0x8000" PeHeaderHash="01019af02c58281520058b0c9af0ced094e33babf199" PeChecksum="0x0" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="Arendi.DataModel" InternalName="Arendi.DataModel.dll" LegalCopyright="Copyright ©  2015" LinkDate="01/12/2016 11:12:38" BinaryType="PE32_CLR_IL" ClrVersion="v4.0.30319" OriginalFileName="Arendi.DataModel.dll" LowerCaseLongPath="c:\windows\temp\appcert_2fa0\51187ozcanovunc.fikirdeposu_1.2.0.8_neutral__gveschbpp6afc\arendi.datamodel.dll" LongPathHash="0000a7adce732926fae57423047cd26e30429d28a1a9" />
+            <File Name="Arendi.WindowsPhone.exe" Id="0000a0cff9bcc9156546913de7ba6fa8b5f83c707917" ProductName="Arendi.WindowsPhone" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0x0100000000000602" FileVersion="1.0.0.0" Size="0x17a00" SizeOfImage="0x1e000" PeHeaderHash="01017392e82eb0c70d08ffd6baa6d1d4238a3ea60848" PeChecksum="0x0" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="Arendi.WindowsPhone" InternalName="Arendi.WindowsPhone.exe" LegalCopyright="Copyright ©  2015" LinkDate="01/12/2016 11:49:11" BinaryType="PE32_CLR_IL_PREFER32" ClrVersion="v4.0.30319" OriginalFileName="Arendi.WindowsPhone.exe" LowerCaseLongPath="c:\windows\temp\appcert_2fa0\51187ozcanovunc.fikirdeposu_1.2.0.8_neutral__gveschbpp6afc\arendi.windowsphone.exe" LongPathHash="0000ef7cf6a00cb0162295de9e00189dcbf1c4f17f61" />
+            <File Name="Newtonsoft.Json.dll" Id="00007b053202590d2f242c5ecf1ae2bba38315d4c70b" ProductName="Json.NET" CompanyName="Newtonsoft" ProductVersion="7.0.1.18622" VerLanguage="0" SwitchBackContext="0x0100000000000400" FileVersion="7.0.1.18622" Size="0x76600" SizeOfImage="0x7c000" PeHeaderHash="010182471c1e24212568a558bb3ea599b6cadf49a2b0" PeChecksum="0x79d33" BinProductVersion="7.0.1.18622" BinFileVersion="7.0.1.18622" FileDescription="Json.NET Portable" InternalName="Newtonsoft.Json.dll" LegalCopyright="Copyright © James Newton-King 2008" LinkDate="06/22/2015 11:05:01" BinaryType="PE32_CLR_IL" ClrVersion="v4.0.30319" OriginalFileName="Newtonsoft.Json.dll" LowerCaseLongPath="c:\windows\temp\appcert_2fa0\51187ozcanovunc.fikirdeposu_1.2.0.8_neutral__gveschbpp6afc\newtonsoft.json.dll" LongPathHash="0000d0af87018299701c70cb9b038ed5fac4e144c8db" />
+            <File Name="resources.pri" Id="0000e9390ec1169e7c55ab9cc340061f2f33e1e1ec80" Size="0x4110" BinaryType="DATA_ONLY" LowerCaseLongPath="c:\windows\temp\appcert_2fa0\51187ozcanovunc.fikirdeposu_1.2.0.8_neutral__gveschbpp6afc\resources.pri" LongPathHash="00005b16946bad9ba1a6d454338dbb00360aa609a281" />
           </Files>
         </StaticProperties>
       </Program>
@@ -172,6 +172,43 @@
   </APPLICATIONS>
   <DEPENDENCY_INFORMATION>
     <AitStaticAnalysis Type="Template">
+      <AitFile ErrorCode="0" Name="Arendi.DataModel.dll" Id="00006d5f309cc0fda76a0131f98642f22c96156fbd53">
+        <AitCategory Id="ApiStatic">
+          <AitFeature Name="mscoree.dll!_CorDllMain" />
+        </AitCategory>
+        <AitCategory Id="DotNet">
+          <AitFeature Name="System.Diagnostics.DebuggableAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggableAttribute..ctor" />
+          <AitFeature Name="System.Object" />
+          <AitFeature Name="System.Object..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyProductAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyProductAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyTitleAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyTitleAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute..ctor" />
+          <AitFeature Name="System.Resources.NeutralResourcesLanguageAttribute" />
+          <AitFeature Name="System.Resources.NeutralResourcesLanguageAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute..ctor" />
+          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute" />
+          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute..ctor" />
+        </AitCategory>
+      </AitFile>
       <AitFile ErrorCode="0" Name="Newtonsoft.Json.dll" Id="00007b053202590d2f242c5ecf1ae2bba38315d4c70b">
         <AitCategory Id="ApiStatic">
           <AitFeature Name="mscoree.dll!_CorDllMain" />
@@ -979,7 +1016,7 @@
           <AitFeature Name="System.Xml.XmlNodeType" />
         </AitCategory>
       </AitFile>
-      <AitFile ErrorCode="0" Name="Arendi.WindowsPhone.exe" Id="0000c3f37d9f87241aeebf23d6c18848d986f0227f74">
+      <AitFile ErrorCode="0" Name="Arendi.WindowsPhone.exe" Id="0000a0cff9bcc9156546913de7ba6fa8b5f83c707917">
         <AitCategory Id="ApiStatic">
           <AitFeature Name="mscoree.dll!_CorExeMain" />
         </AitCategory>
@@ -1416,43 +1453,6 @@
           <AitFeature Name="Windows.UI.Xaml.Window.get_Content" />
           <AitFeature Name="Windows.UI.Xaml.Window.get_Current" />
           <AitFeature Name="Windows.UI.Xaml.Window.put_Content" />
-        </AitCategory>
-      </AitFile>
-      <AitFile ErrorCode="0" Name="Arendi.DataModel.dll" Id="0000eca77213241d39650a6c9f98655902b4b062427c">
-        <AitCategory Id="ApiStatic">
-          <AitFeature Name="mscoree.dll!_CorDllMain" />
-        </AitCategory>
-        <AitCategory Id="DotNet">
-          <AitFeature Name="System.Diagnostics.DebuggableAttribute" />
-          <AitFeature Name="System.Diagnostics.DebuggableAttribute..ctor" />
-          <AitFeature Name="System.Object" />
-          <AitFeature Name="System.Object..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyProductAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyProductAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyTitleAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyTitleAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute..ctor" />
-          <AitFeature Name="System.Resources.NeutralResourcesLanguageAttribute" />
-          <AitFeature Name="System.Resources.NeutralResourcesLanguageAttribute..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" />
-          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute..ctor" />
-          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute" />
-          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute..ctor" />
         </AitCategory>
       </AitFile>
     </AitStaticAnalysis>

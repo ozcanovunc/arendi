@@ -1,7 +1,5 @@
 ## FİKİR DEPOSU
 
-##### GTU BIL495 - Bitirme Projesi I
-
 - Proje, firma çalışanların ürettiği fikirlerin saklanması, takibi, projeye dönüştürülmesi ve patent ya da diğer fikri mülkiyet haklarının değerlendirilmesi için sistematik bir yaklaşım getirmesi açısından önem arz etmektedir.
 - Bu parlak konseptin geniş kitlelere ulaştırılıp kullandırılması amacıyla, bahsedilen proje Windows Phone platformunda gerçekleştirilmiştir.
 
